@@ -13,13 +13,13 @@ a {
   background-color: #2F3542;
 }
 
-.nav-bar{
+/* .nav-bar{
   width: 100%;
   height: 7vh;
   background-color: #A4B0BE;
   color: white;
   float: left;
-}
+} */
 
 .logo{
   width: 55px;
@@ -72,7 +72,11 @@ a {
 }
 
 .sign-container{
-
+  width: 1203px;
+  height: 601px;
+  margin-top: 0px;
+  margin-left: 119px;
+  background-color: #74B9FF;
 }
 
 
