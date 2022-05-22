@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+
 html, body, p, li, ul, h1{
   margin: 0;
   padding: 0;
@@ -13,13 +15,13 @@ a {
   background-color: #2F3542;
 }
 
-/* .nav-bar{
+.nav-bar{
   width: 100%;
   height: 7vh;
   background-color: #A4B0BE;
   color: white;
   float: left;
-} */
+}
 
 .logo{
   width: 55px;
@@ -74,9 +76,123 @@ a {
 .sign-container{
   width: 1203px;
   height: 601px;
-  margin-top: 0px;
-  margin-left: 119px;
+  margin-top: 70px;
+  margin-left: 115px;
+  border-radius: 15px;
   background-color: #74B9FF;
+  float: left;
 }
 
+.left{
+  width: 602px;
+  height: 601px;
+  border-radius: 15px 0px 0px 15px;
+  background-color: #74B9FF;
+  float: left;
+}
 
+.right{
+  width: 602px;
+  height: 601px;
+  margin-left: 601px;
+  margin-top: -601px;
+  border-radius: 0px 15px 15px 0px;
+  background-color:  #636E72;
+  float: left;
+}
+
+.login-text{
+  margin-top: 197px;
+  margin-left: 151px;
+  font-family: inter;
+  font-weight: 400;
+  font-size: 33px;
+  float: left;
+}
+
+.welcome-login-text{
+  margin-top: 13px;
+  margin-left: 151px;
+  font-family: inter;
+  font-weight: 300;
+  float: left;
+}
+
+.email-text{
+  margin-top: 30px;
+  margin-left: 151px;
+  font-family: inter;
+  font-weight: 300;
+  float: left;
+}
+
+.password-text{
+  margin-top: 25px;
+  margin-left: 151px;
+  font-family: inter;
+  font-weight: 300;
+  float: left;
+}
+
+.email-input{
+  width: 301px;
+  height: 35px;
+  border: none;
+  background-color: #f7f7f7;
+  border-radius: 9px;
+  padding-left: 4%;
+  margin-top: 60px;
+  margin-left: -40px;
+  float: left;
+}
+
+.password-input{
+  width: 301px;
+  height: 35px;
+  border: none;
+  background-color: #f7f7f7;
+  border-radius: 9px;
+  padding-left: 4%;
+  margin-top: 55px;
+  margin-left: -70px;
+  float: left;
+}
+
+.btn-container{
+  width: 301px;
+  height: 39px;
+  margin-left: 165px;
+  margin-top: 20px;
+  border-radius: 9px;
+  background-color: #0984e3;
+  float: left;
+}
+
+.signIn-btn{
+  font-size: 15px;
+  font-family: inter;
+  font-weight: 200;
+  margin-left: 130px;
+  margin-top: 11px;
+  color: white;
+  float: left; 
+}
+
+.no-account-text{
+  font-size: 14px;
+  font-family: inter;
+  font-weight: 400;
+  margin-top: 15px;
+  margin-left: 210px;
+  float: left;
+}
+
+.signUp-text{
+  font-size: 14px;
+  font-family: inter;
+  font-weight: 300;
+  margin-top: 15px;
+  margin-left: 6px;
+  color: blue;
+  float: left;
+}
