@@ -214,6 +214,7 @@ a:hover{
   float: left;
 }
 
+/* Home Page */
 .header{
   width: 1440px;
   height: 400px;
@@ -227,6 +228,33 @@ a:hover{
   width: 1440px;
   height: 518px;
   background-color: #636E72;
+}
+
+.cal-time-container{
+  width: 787px;
+  height: 408px;
+  margin-left: 321px;
+  background-color: #353840;
+  float: left;
+}
+
+.month-left-chevron{
+  width: 28px;
+  height: 27px;
+  margin-top: 44px;
+  margin-left: 435px;
+  background-color: #717171;
+  float: left;
+
+}
+
+.date-box{
+  width: 321px;
+  height: 199px; 
+  margin-top: 138px;
+  margin-left: 435px;
+  background-color: #717171;
+  float: left; 
 }
 
 .appointment-container{

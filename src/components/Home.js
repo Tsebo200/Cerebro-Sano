@@ -8,7 +8,13 @@ const Home = () => {
         <>
             <div className="header"></div>
             <div className="main-container">
-                <div className="calendar-container"></div>
+                <div className="calendar-container">
+                    <div className="cal-time-container">
+                        <div className="month-left-chevron"></div>
+                        <div className="month-name"></div>
+                        <div className="date-box"></div>
+                    </div>
+                </div>
                 <div className="appointment-container">
                     <div className="appoint-card-container">
                         <div className="text-info-box">
