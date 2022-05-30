@@ -10,9 +10,20 @@ const Home = () => {
             <div className="main-container">
                 <div className="calendar-container">
                     <div className="cal-time-container">
+                        <div className="time-container">
+                        <div className="date-time-box"></div>
+                        <div className="top-chevron-one"></div>
+                        <div className="top-chevron-two"></div>
+                        <div className="time-appoint"></div>
+                        <div className="bottom-chevron-one"></div>
+                        <div className="bottom-chevron-two"></div>
+                        <div className="book-btn"></div>
+                        </div>
                         <div className="month-left-chevron"></div>
-                        <div className="month-name"></div>
-                        <div className="date-box"></div>
+                        <div className="date-year-box"></div>
+                        <div className="month-right-chevron"></div>
+                        <div className="week-box"></div>
+                        <div className="calendar-box"></div>
                     </div>
                 </div>
                 <div className="appointment-container">
