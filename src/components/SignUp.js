@@ -14,9 +14,12 @@ const SignUp = () => {
                 <form><input className='email-input' type={'text'} placeholder={"Enter Your Email"}></input></form>
                 <p className='password-text'>Password</p>
                 <form><input className='password-input' type={'text'} placeholder={"Enter Your Password"}></input></form>
+                <form><input className='check-box' type={'checkbox'}></input><label>Remember for 30 days</label></form>
+                <p className='forgot-password-text'>forgot password?</p>
                 <div className='btn-container'>
                     <p className='signIn-btn'>Sign in</p>
                 </div>
+                <div className='SignIn-Google-btn'><p className='Sign-Google-text'>Sign In with Google</p></div>
                 <p className='no-account-text'>Don't have an account?</p><p className='signUp-text'>Sign up</p>
             </div>
             <div className='right'></div>
