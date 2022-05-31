@@ -1,15 +1,17 @@
 import React from 'react';
 import axios from 'axios';
 
-const SignUp = () => {
+const SignIn = () => {
    
     return(
         <>
         <div className='main-container'>
         <div className='sign-container'>
             <div className='left'>
+                <div className='sign-logo'></div>
+                <p className='cerebro-sano'>Cerebro Sano</p>
                 <p className='login-text'>Log in</p>
-                <p className='welcome-login-text'>Welcome back! Please enter your details</p>
+                <p className='welcome-login-text'>Welcome back! Please enter your details.</p>
                 <p className='email-text'>Email</p>
                 <form><input className='email-input' type={'text'} placeholder={"Enter Your Email"}></input></form>
                 <p className='password-text'>Password</p>
@@ -29,4 +31,4 @@ const SignUp = () => {
     );
 }
 
-export default SignUp
+export default SignIn

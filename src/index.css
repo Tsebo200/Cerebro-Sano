@@ -81,7 +81,7 @@ a:hover{
   float: left;
 }
 
-.signupli{
+.signinli{
   list-style-type: none;
   font-size: 22px;
   margin-left: 280px;
@@ -107,6 +107,39 @@ a:hover{
   float: left;
 }
 
+.sign-logo{
+  width: 50.45px;
+  height: 47.09px;
+  margin-top: 96px;
+  margin-left: 133px;
+  background-image: url("../src/Assets/Logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: left;
+}
+
+.sign-logo:hover{
+  width: 50.45px;
+  height: 47.09px;
+  margin-top: 96px;
+  margin-left: 133px;
+  background-image: url("../src/Assets/Hover.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: left;
+}
+
+.cerebro-sano{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 110px;
+  margin-left: 5.55px;
+  float: left;
+}
+
 .right{
   width: 602px;
   height: 100vh;
@@ -119,7 +152,7 @@ a:hover{
 
 .login-text{
   margin-top: 197px;
-  margin-left: 151px;
+  margin-left: -140px;
   font-family: inter;
   font-weight: 400;
   font-size: 33px;
@@ -127,8 +160,8 @@ a:hover{
 }
 
 .welcome-login-text{
-  margin-top: 13px;
-  margin-left: 151px;
+  margin-top: 250px;
+  margin-left: -140px;
   font-family: inter;
   font-weight: 300;
   float: left;
@@ -266,6 +299,17 @@ label{
   letter-spacing: -0.006em;
   margin-left: 27px;
   margin-top: 12px;
+}
+
+/* Register */
+
+.sign-container{
+  width: 1203px;
+  height: 100vh;
+  margin-left: 115px;
+  border-radius: 15px;
+  background-color: #74B9FF;
+  float: left;
 }
 
 /* Home Page */
