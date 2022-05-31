@@ -101,9 +101,9 @@ a:hover{
 
 .left{
   width: 602px;
-  height: 601px;
+  height: 100%;
   border-radius: 15px 0px 0px 15px;
-  background-color: #74B9FF;
+  background-color: transparent;
   float: left;
 }
 
@@ -144,7 +144,7 @@ a:hover{
   width: 602px;
   height: 100vh;
   margin-left: 601px;
-  margin-top: -601px;
+  margin-top: -100vh;
   border-radius: 0px 15px 15px 0px;
   background-color:  #636E72;
   float: left;
@@ -302,13 +302,20 @@ label{
 }
 
 /* Register */
-
 .sign-container{
   width: 1203px;
   height: 100vh;
   margin-left: 115px;
   border-radius: 15px;
   background-color: #74B9FF;
+  float: left;
+}
+
+.left-reg{
+  width: 602px;
+  height: 100%;
+  border-radius: 15px 0px 0px 15px;
+  background-color:  #636E72;
   float: left;
 }
 
