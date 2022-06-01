@@ -19,11 +19,20 @@ const Register = () => {
                     <p className="age-text">Age</p>
                     <form><input className='age-input' type={'number'} placeholder={"Enter Your Age"}></input></form>
                     <p className="gender-text">Gender</p>
-                    <form><input className='gender-input' type={'text'} placeholder={"Enter Your Gender"}></input></form>
+                    <form><input className='gender-input' type={'text'} placeholder={"Select Your Gender"}></input></form>
                     <p className="phone-number-text">Phone Number</p>
-                    <form><input className='phone-number-input' type={'number'} placeholder={"Enter Your Phone Numbers"}></input></form>
+                    <form><input className='phone-number-input' type={'number'} placeholder={"Enter Your Phone Number"}></input></form>
                     <p className="rank-text">Rank</p>
-                    <form><input className='rank-input' type={'number'} placeholder={"Enter Your Phone Numbers"}></input></form>
+                    <form><input className='rank-input' type={'text'} placeholder={"Select Your Rank"}></input></form>
+                    <p className="email-text-reg">Email</p>
+                    <form><input className='email-input-reg' type={'email'} placeholder={"Enter Your Email"}></input></form>
+                    <p className="password-text-reg">Password</p>
+                    <form><input className='password-input-reg' type={'password'} placeholder={"Enter Your Password"}></input></form>
+                    <div className='btn-container'>
+                    <p className='register-btn'>Create Account</p>
+                    </div>
+                    <div className='continue-Google-btn'><p className='continue-Google-text'>Continue with Google</p></div>
+                    
                 </div>
             </div>
         </div>

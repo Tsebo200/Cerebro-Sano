@@ -333,7 +333,7 @@ label{
 .sign-logo-reg{
   width: 50.45px;
   height: 47.09px;
-  margin-top: 31px;
+  margin-top: 24px;
   margin-left: 133px;
   background-image: url("../src/Assets/Logo.png");
   background-repeat: no-repeat;
@@ -345,7 +345,7 @@ label{
 .sign-logo-reg:hover{
   width: 50.45px;
   height: 47.09px;
-  margin-top: 31px;
+  margin-top: 24px;
   margin-left: 133px;
   background-image: url("../src/Assets/Hover.png");
   background-repeat: no-repeat;
@@ -358,13 +358,13 @@ label{
   font-family: Inter;
   font-weight: 400;
   font-size: 13px;
-  margin-top: 43px;
+  margin-top: 36px;
   margin-left: 5.55px;
   float: left;
 }
 
 .create-account-text{
-  margin-top: 49px;
+  margin-top: 20px;
   margin-left: 151px;
   font-family: inter;
   font-weight: 400;
@@ -472,7 +472,7 @@ label{
 
 .phone-number-text{
   margin-top: 229px;
-  margin-left: -315px;
+  margin-left: -319px;
   font-family: inter;
   font-weight: 300;
   float: left;
@@ -490,6 +490,100 @@ label{
   float: left;
 }
 
+.rank-text{
+  margin-top: 93px;
+  margin-left: -328px;
+  font-family: inter;
+  font-weight: 300;
+  float: left;
+}
+
+.rank-input{
+  width: 315px;
+  height: 35px;
+  border: 1px solid grey;
+  background-color: #f7f7f7;
+  border-radius: 9px;
+  padding-left: 11px;
+  margin-top: 40px;
+  margin-left: 153px;
+  float: left;
+}
+
+.email-text-reg{
+  margin-top: 93px;
+  margin-left: -328px;
+  font-family: inter;
+  font-weight: 300;
+  float: left;
+}
+
+.email-input-reg{
+  width: 315px;
+  height: 35px;
+  border: 1px solid grey;
+  background-color: #f7f7f7;
+  border-radius: 9px;
+  padding-left: 11px;
+  margin-top: 40px;
+  margin-left: 153px;
+  float: left;
+}
+
+.password-text-reg{
+  margin-top: 93px;
+  margin-left: -328px;
+  font-family: inter;
+  font-weight: 300;
+  float: left;
+}
+
+.password-input-reg{
+  width: 315px;
+  height: 35px;
+  border: 1px solid grey;
+  background-color: #f7f7f7;
+  border-radius: 9px;
+  padding-left: 11px;
+  margin-top: 40px;
+  margin-left: 153px;
+  float: left;
+}
+
+.register-btn{
+  font-size: 15px;
+  font-family: inter;
+  font-weight: 300;
+  margin-left: 95px;
+  margin-top: 11px;
+  color: white;
+  float: left; 
+}
+
+.continue-Google-btn{
+  width: 301px;
+  height: 39px;
+  border: 1px solid grey;
+  margin-left: 165px;
+  margin-top: 14px;
+  background-image: url("../src/Assets/Google.png");
+  background-repeat: no-repeat;
+  background-position: 75px;
+  background-size: 22px 22px;
+  border-radius: 9px;
+  background-color: white;
+  float: left;
+}
+
+.continue-Google-text{
+  font-family: inter;
+  font-weight: 400px;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: -0.006em;
+  margin-left: 37px;
+  margin-top: 12px;
+}
 /* Home Page */
 .header{
   width: 1440px;
