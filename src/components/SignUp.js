@@ -22,7 +22,7 @@ const SignIn = () => {
                     <p className='signIn-btn'>Sign in</p>
                 </div>
                 <div className='SignIn-Google-btn'><p className='Sign-Google-text'>Sign In with Google</p></div>
-                <p className='no-account-text'>Don't have an account?</p><p className='signUp-text'>Sign up</p>
+                <p className='no-account-text'>Don't have an account?</p><p className='signin-text'>Sign up</p>
             </div>
             <div className='right'></div>
         </div>

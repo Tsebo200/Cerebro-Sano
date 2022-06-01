@@ -90,6 +90,7 @@ a:hover{
   float: left;
 }
 
+/* Sign In Page */
 .sign-container{
   width: 1203px;
   height: 100vh;
@@ -266,12 +267,12 @@ label{
   float: left;
 }
 
-.signUp-text{
+.signin-text{
   font-size: 14px;
   font-family: inter;
   font-weight: 300;
   margin-top: 15px;
-  margin-left: 6px;
+  margin-left: 5px;
   color: blue;
   float: left;
 }
@@ -316,6 +317,176 @@ label{
   height: 100%;
   border-radius: 15px 0px 0px 15px;
   background-color:  #636E72;
+  float: left;
+}
+
+.right-reg{
+  width: 602px;
+  height: 100%;
+  margin-left: 601px;
+  margin-top: -100vh;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #74B9FF;;
+  float: left;
+}
+
+.sign-logo-reg{
+  width: 50.45px;
+  height: 47.09px;
+  margin-top: 31px;
+  margin-left: 133px;
+  background-image: url("../src/Assets/Logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: left;
+}
+
+.sign-logo-reg:hover{
+  width: 50.45px;
+  height: 47.09px;
+  margin-top: 31px;
+  margin-left: 133px;
+  background-image: url("../src/Assets/Hover.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: left;
+}
+
+.cerebro-sano-reg{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 43px;
+  margin-left: 5.55px;
+  float: left;
+}
+
+.create-account-text{
+  margin-top: 49px;
+  margin-left: 151px;
+  font-family: inter;
+  font-weight: 400;
+  font-size: 33px;
+  float: left;
+}
+
+.already-member-text{
+  margin-top: 13px;
+  margin-left: 151px;
+  font-family: inter;
+  font-weight: 300;
+  float: left;
+}
+
+.signin-text-reg{
+  margin-top: 13px;
+  margin-left: 5px;
+  font-family: inter;
+  font-weight: 300;
+  color: blue;
+  float: left;
+}
+
+.first-name-text{
+  margin-top: 70px;
+  margin-left: -200px;
+  font-family: inter;
+  font-weight: 300;
+  float: left;
+}
+
+.first-name-input{
+  width: 139px;
+  height: 35px;
+  border: 1px solid grey;
+  background-color: #f7f7f7;
+  border-radius: 9px;
+  padding-left: 11px;
+  margin-top: 95px;
+  margin-left: -200px;
+  float: left;
+}
+
+.last-name-text{
+  margin-top: 70px;
+  margin-left: -32px;
+  font-family: inter;
+  font-weight: 300;
+  float: left;
+}
+
+.last-name-input{
+  width: 139px;
+  height: 35px;
+  border: 1px solid grey;
+  background-color: #f7f7f7;
+  border-radius: 9px;
+  padding-left: 11px;
+  margin-top: 95px;
+  margin-left: -82px;
+  float: left;
+}
+
+.age-text{
+  margin-top: 150px;
+  margin-left: -318px;
+  font-family: inter;
+  font-weight: 300;
+  float: left;
+}
+
+.age-input{
+  width: 139px;
+  height: 35px;
+  border: 1px solid grey;
+  background-color: #f7f7f7;
+  border-radius: 9px;
+  padding-left: 11px;
+  margin-top: 176px;
+  margin-left: -318px;
+  float: left; 
+}
+
+
+.gender-text{
+  margin-top: 150px;
+  margin-left: -153px;
+  font-family: inter;
+  font-weight: 300;
+  float: left;
+}
+
+.gender-input{
+  width: 139px;
+  height: 35px;
+  border: 1px solid grey;
+  background-color: #f7f7f7;
+  border-radius: 9px;
+  padding-left: 11px;
+  margin-top: 176px;
+  margin-left: -153px;
+  float: left; 
+}
+
+.phone-number-text{
+  margin-top: 229px;
+  margin-left: -315px;
+  font-family: inter;
+  font-weight: 300;
+  float: left;
+}
+
+.phone-number-input{
+  width: 315px;
+  height: 35px;
+  border: 1px solid grey;
+  background-color: #f7f7f7;
+  border-radius: 9px;
+  padding-left: 11px;
+  margin-top: 40px;
+  margin-left: 153px;
   float: left;
 }
 
