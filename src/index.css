@@ -1063,7 +1063,7 @@ label{
   background-color: #353840;
   float: left;
 }
-
+/* New Patients */
 .vert-nav-bar{
   width: 219px;
   height: 100vh;
@@ -1071,4 +1071,556 @@ label{
   background: #D9D9D9;
   border-radius: 45px 0px 0px 45px;
   float: left;
+}
+
+.patients-detail-container{
+  width: 706px;
+  height: 745px;
+  background: rgba(217, 217, 217, 0.2);
+  margin-top: 20px;
+  margin-left: 28px;
+  float: left;
+}
+
+.patients-text{
+  font-family: inter;
+  font-weight: 400;
+  font-size: 25px;
+  margin-left: 7px;
+  float: left;
+}
+
+.patients-header{
+  width: 706px;
+  height: 25px;
+  margin-top: 123px;
+  border-radius: 8px;
+  background: #D9D9D9;
+  float: left;
+}
+
+.name-label{
+  font-family: inter;
+  font-weight: 400;
+  font-size: 11px;
+  margin-left: 117px;
+  margin-top: 6px;
+  float: left;
+}
+
+.surname-label{
+  font-family: inter;
+  font-weight: 400;
+  font-size: 11px;
+  margin-left: 115px;
+  margin-top: 6px;
+  float: left;
+}
+
+.email-label{
+  font-family: inter;
+  font-weight: 400;
+  font-size: 11px;
+  margin-left: 117px;
+  margin-top: 6px;
+  float: left;
+}
+
+.phone-number-label{
+  font-family: inter;
+  font-weight: 400;
+  font-size: 11px;
+  margin-left: 101px;
+  margin-top: 6px;
+  float: left;
+}
+
+.patients-detail-container-one{
+  width: 706px;
+  height: 60px;
+  margin-top: 21px;
+  background: #D9D9D9;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-profile-one{
+  width: 50px;
+  height: 50px;
+  margin-left: 14px;
+  margin-top: 5px;
+  border: 1px solid #000000;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-name-one{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 11.51px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-surname-one{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-email-one{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-phone-number-one{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-remove-btn-one{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  border: 0.513657px solid #000000;
+  border-radius: 360px;
+  float: left;
+}
+
+/* Patient Two */
+.patients-detail-container-two{
+  width: 706px;
+  height: 60px;
+  margin-top: 18px;
+  background: #D9D9D9;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-profile-two{
+  width: 50px;
+  height: 50px;
+  margin-left: 14px;
+  margin-top: 5px;
+  border: 1px solid #000000;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-name-two{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 11.51px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-surname-two{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-email-two{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-phone-number-two{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-remove-btn-two{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  border: 0.513657px solid #000000;
+  border-radius: 360px;
+  float: left;
+}
+
+/*  Patient Three*/
+.patients-detail-container-three{
+  width: 706px;
+  height: 60px;
+  margin-top: 18px;
+  background: #D9D9D9;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-profile-three{
+  width: 50px;
+  height: 50px;
+  margin-left: 14px;
+  margin-top: 5px;
+  border: 1px solid #000000;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-name-three{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 11.51px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-surname-three{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-email-three{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-phone-number-three{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-remove-btn-three{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  border: 0.513657px solid #000000;
+  border-radius: 360px;
+  float: left;
+}
+
+/* Patients Four */
+.patients-detail-container-four{
+  width: 706px;
+  height: 60px;
+  margin-top: 18px;
+  background: #D9D9D9;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-profile-four{
+  width: 50px;
+  height: 50px;
+  margin-left: 14px;
+  margin-top: 5px;
+  border: 1px solid #000000;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-name-four{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 11.51px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-surname-four{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-email-four{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-phone-number-four{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-remove-btn-four{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  border: 0.513657px solid #000000;
+  border-radius: 360px;
+  float: left;
+}
+
+/* Patient Five */
+.patients-detail-container-five{
+  width: 706px;
+  height: 60px;
+  margin-top: 18px;
+  background: #D9D9D9;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-profile-five{
+  width: 50px;
+  height: 50px;
+  margin-left: 14px;
+  margin-top: 5px;
+  border: 1px solid #000000;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-name-five{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 11.51px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-surname-five{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-email-five{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-phone-number-five{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-remove-btn-five{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  border: 0.513657px solid #000000;
+  border-radius: 360px;
+  float: left;
+}
+/* Patient Six */
+.patients-detail-container-six{
+  width: 706px;
+  height: 60px;
+  margin-top: 18px;
+  background: #D9D9D9;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-profile-six{
+  width: 50px;
+  height: 50px;
+  margin-left: 14px;
+  margin-top: 5px;
+  border: 1px solid #000000;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-name-six{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 11.51px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-surname-six{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-email-six{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-phone-number-six{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-remove-btn-six{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  border: 0.513657px solid #000000;
+  border-radius: 360px;
+  float: left;
+}
+/* Patient Seven */
+.patients-detail-container-seven{
+  width: 706px;
+  height: 60px;
+  margin-top: 18px;
+  background: #D9D9D9;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-profile-seven{
+  width: 50px;
+  height: 50px;
+  margin-left: 14px;
+  margin-top: 5px;
+  border: 1px solid #000000;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-name-seven{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 11.51px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-surname-seven{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-email-seven{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-phone-number-seven{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-remove-btn-seven{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  border: 0.513657px solid #000000;
+  border-radius: 360px;
+  float: left;
+}
+.edit-patients-page-container{
+ 
 }
