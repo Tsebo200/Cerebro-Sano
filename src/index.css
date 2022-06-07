@@ -1069,7 +1069,7 @@ label{
   height: 100vh;
   margin-left: 120px;
   background: #D9D9D9;
-  border-radius: 45px 0px 0px 45px;
+  border-radius: 38px 0px 0px 38px;
   float: left;
 }
 
@@ -1621,6 +1621,104 @@ label{
   border-radius: 360px;
   float: left;
 }
-.edit-patients-page-container{
- 
+/* Patients Edit Container */
+.edit-patients-detail-container{
+  width: 224px;
+  height: 803px;
+  width: 219px;
+  height: 100vh;
+  margin-left: 28px;
+  background: #D9D9D9;
+  border-radius: 0px 38px 38px 0px;
+  float: left;
+}
+
+.edit-patients-profile{
+  width: 151px;
+  height: 151px;
+  margin-top: 73px;
+  margin-left: 37px;
+  border-radius: 360px;
+  background: #FFFFFF;
+  float: left;
+}
+
+.edit-patients-name{
+  width: 91px;
+  height: 26px;
+  margin-top: 55.58px;
+  margin-left: 16px;
+  background: #FFFFFF;
+  border-radius: 9px;
+  float: left;
+}
+
+.edit-patients-surname{
+  width: 91px;
+  height: 26px;
+  margin-top: 55.58px;
+  margin-left: 9.26px;
+  background: #FFFFFF;
+  border-radius: 9px;
+  float: left;
+}
+
+.edit-patients-age{
+  width: 91px;
+  height: 26px;
+  margin-top: 38.41px;
+  margin-left: 16px;
+  background: #FFFFFF;
+  border-radius: 9px;
+  float: left;
+}
+
+.edit-patients-gender{
+  width: 91px;
+  height: 26px;
+  margin-top: 38.41px;
+  margin-left: 9.26px;
+  background: #FFFFFF;
+  border-radius: 9px;
+  float: left;
+}
+
+.edit-patients-email{
+  width: 191px;
+  height: 26px;
+  margin-top: 38.41px;
+  margin-left: 17px;
+  background: #FFFFFF;
+  border-radius: 9px;
+  float: left;
+}
+
+.edit-patients-phone-number{
+  width: 191px;
+  height: 26px;
+  margin-top: 38.41px;
+  margin-left: 17px;
+  background: #FFFFFF;
+  border-radius: 9px;
+  float: left;
+}
+
+.edit-patients-id{
+  width: 191px;
+  height: 26px;
+  margin-top: 38.41px;
+  margin-left: 17px;
+  background: #FFFFFF;
+  border-radius: 9px;
+  float: left;
+}
+
+.edit-patients-medical-aid-number{
+  width: 191px;
+  height: 26px;
+  margin-top: 38.41px;
+  margin-left: 17px;
+  background: #FFFFFF;
+  border-radius: 9px;
+  float: left;
 }
