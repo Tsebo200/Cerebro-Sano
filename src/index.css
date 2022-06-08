@@ -45,7 +45,7 @@ a:hover{
   width: 55px;
   height: 55px;
   border-radius: 50px;
-  background-image: url("../src/Assets/Hover.png");
+  background-image: url("../src/Assets/Logo\ Hover.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -59,7 +59,7 @@ a:hover{
   font-size: 22px;
   margin-left: 80px;
   margin-top: 15px;
-  font-family: avenir;
+  font-family: Inter;
   float: left;
 }
 
@@ -68,7 +68,7 @@ a:hover{
   font-size: 22px;
   margin-left: 280px;
   margin-top: 15px;
-  font-family: avenir;
+  font-family: Inter;
   float: left;
 }
 
@@ -77,7 +77,7 @@ a:hover{
   font-size: 22px;
   margin-left: 280px;
   margin-top: 15px;
-  font-family: avenir;
+  font-family: Inter;
   float: left;
 }
 
@@ -86,7 +86,7 @@ a:hover{
   font-size: 22px;
   margin-left: 280px;
   margin-top: 15px;
-  font-family: avenir;
+  font-family: Inter;
   float: left;
 }
 
@@ -125,7 +125,7 @@ a:hover{
   height: 47.09px;
   margin-top: 96px;
   margin-left: 133px;
-  background-image: url("../src/Assets/Hover.png");
+  background-image: url("../src/Assets/Logo\ Hover.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -157,7 +157,7 @@ a:hover{
 .login-text{
   margin-top: 197px;
   margin-left: -140px;
-  font-family: inter;
+  font-family: Inter;
   font-weight: 400;
   font-size: 33px;
   float: left;
@@ -166,7 +166,7 @@ a:hover{
 .welcome-login-text{
   margin-top: 250px;
   margin-left: -140px;
-  font-family: inter;
+  font-family: Inter;
   font-weight: 300;
   float: left;
 }
@@ -174,7 +174,7 @@ a:hover{
 .email-text{
   margin-top: 30px;
   margin-left: 151px;
-  font-family: inter;
+  font-family: Inter;
   font-weight: 300;
   float: left;
 }
@@ -182,7 +182,7 @@ a:hover{
 .password-text{
   margin-top: 25px;
   margin-left: 151px;
-  font-family: inter;
+  font-family: Inter;
   font-weight: 300;
   float: left;
 }
@@ -223,7 +223,7 @@ a:hover{
 
 label{
   font-size: 12px;
-  font-family: inter;
+  font-family: Inter;
   letter-spacing: -0.042em;
   font-weight: 400;
   margin-left: 7px;
@@ -235,7 +235,7 @@ label{
   margin-top: 19px;
   margin-left: 65px;
   font-size: 13px;
-  font-family: inter;
+  font-family: Inter;
   font-weight: 400;
   color: blue;
   float: left;
@@ -253,7 +253,7 @@ label{
 
 .signIn-btn{
   font-size: 15px;
-  font-family: inter;
+  font-family: Inter;
   font-weight: 300;
   margin-left: 130px;
   margin-top: 11px;
@@ -263,7 +263,7 @@ label{
 
 .no-account-text{
   font-size: 14px;
-  font-family: inter;
+  font-family: Inter;
   font-weight: 400;
   margin-top: 15px;
   margin-left: 210px;
@@ -272,7 +272,7 @@ label{
 
 .signin-text{
   font-size: 14px;
-  font-family: inter;
+  font-family: Inter;
   font-weight: 300;
   margin-top: 15px;
   margin-left: 5px;
@@ -296,7 +296,7 @@ label{
 }
 
 .Sign-Google-text{
-  font-family: inter;
+  font-family: Inter;
   font-weight: 400px;
   font-size: 13px;
   line-height: 16px;
@@ -353,7 +353,7 @@ label{
   height: 47.09px;
   margin-top: 24px;
   margin-left: 133px;
-  background-image: url("../src/Assets/Hover.png");
+  background-image: url("../src/Assets/Logo\ Hover.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -372,7 +372,7 @@ label{
 .create-account-text{
   margin-top: 20px;
   margin-left: 151px;
-  font-family: inter;
+  font-family: Inter;
   font-weight: 400;
   font-size: 33px;
   float: left;
@@ -381,7 +381,7 @@ label{
 .already-member-text{
   margin-top: 13px;
   margin-left: 151px;
-  font-family: inter;
+  font-family: Inter;
   font-weight: 300;
   float: left;
 }
@@ -389,7 +389,7 @@ label{
 .signin-text-reg{
   margin-top: 13px;
   margin-left: 5px;
-  font-family: inter;
+  font-family: Inter;
   font-weight: 300;
   color: blue;
   float: left;
@@ -398,7 +398,7 @@ label{
 .first-name-text{
   margin-top: 70px;
   margin-left: -200px;
-  font-family: inter;
+  font-family: Inter;
   font-weight: 300;
   float: left;
 }
@@ -418,7 +418,7 @@ label{
 .last-name-text{
   margin-top: 70px;
   margin-left: -32px;
-  font-family: inter;
+  font-family: Inter;
   font-weight: 300;
   float: left;
 }
@@ -438,7 +438,7 @@ label{
 .age-text{
   margin-top: 150px;
   margin-left: -318px;
-  font-family: inter;
+  font-family: Inter;
   font-weight: 300;
   float: left;
 }
@@ -459,7 +459,7 @@ label{
 .gender-text{
   margin-top: 150px;
   margin-left: -153px;
-  font-family: inter;
+  font-family: Inter;
   font-weight: 300;
   float: left;
 }
@@ -479,7 +479,7 @@ label{
 .phone-number-text{
   margin-top: 229px;
   margin-left: -319px;
-  font-family: inter;
+  font-family: Inter;
   font-weight: 300;
   float: left;
 }
@@ -499,7 +499,7 @@ label{
 .rank-text{
   margin-top: 93px;
   margin-left: -328px;
-  font-family: inter;
+  font-family: Inter;
   font-weight: 300;
   float: left;
 }
@@ -519,7 +519,7 @@ label{
 .email-text-reg{
   margin-top: 93px;
   margin-left: -328px;
-  font-family: inter;
+  font-family: Inter;
   font-weight: 300;
   float: left;
 }
@@ -539,7 +539,7 @@ label{
 .password-text-reg{
   margin-top: 93px;
   margin-left: -328px;
-  font-family: inter;
+  font-family: Inter;
   font-weight: 300;
   float: left;
 }
@@ -558,7 +558,7 @@ label{
 
 .register-btn{
   font-size: 15px;
-  font-family: inter;
+  font-family: Inter;
   font-weight: 300;
   margin-left: 95px;
   margin-top: 11px;
@@ -582,7 +582,7 @@ label{
 }
 
 .continue-Google-text{
-  font-family: inter;
+  font-family: Inter;
   font-weight: 400px;
   font-size: 13px;
   line-height: 16px;
@@ -833,7 +833,7 @@ label{
 }
 
 .time{
-  font-family: inter;
+  font-family: Inter;
   font-weight: 300;
   font-size: 15px;
   margin-left: 39.5px;
@@ -844,7 +844,7 @@ label{
 }
 
 .date{
-  font-family: inter;
+  font-family: Inter;
   font-weight: 300;
   font-size: 15px;
   margin-left: 18px;
@@ -854,7 +854,7 @@ label{
 }
 
 .doctor{
-  font-family: inter;
+  font-family: Inter;
   font-weight: 300;
   font-size: 15px;
   margin-left: 9px;
@@ -864,7 +864,7 @@ label{
 }
 
 .room{
-  font-family: inter;
+  font-family: Inter;
   font-weight: 300;
   font-size: 15px;
   margin-left: 55px;
@@ -1073,6 +1073,39 @@ label{
   float: left;
 }
 
+.patients-logo-box{
+  width: 72px;
+  height: 67px;
+  margin-top: 40px;
+  margin-left: 73px;
+  background-image: url('../src/Assets/Logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: left;
+}
+
+.patients-logo-box:hover{
+  width: 72px;
+  height: 67px;
+  margin-top: 40px;
+  margin-left: 73px;
+  background-image: url('../src/Assets/Logo\ Hover.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: left;
+}
+
+.patients-cerebrosano{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 11px;
+  margin-left: 59px;
+  float: left;
+}
+
 .patients-detail-container{
   width: 706px;
   height: 745px;
@@ -1084,7 +1117,7 @@ label{
 }
 
 .patients-text{
-  font-family: inter;
+  font-family: Inter;
   font-weight: 400;
   font-size: 25px;
   margin-left: 7px;
@@ -1102,7 +1135,7 @@ label{
 }
 
 .name-label{
-  font-family: inter;
+  font-family: Inter;
   font-weight: 400;
   font-size: 11px;
   margin-left: 117px;
@@ -1111,7 +1144,7 @@ label{
 }
 
 .surname-label{
-  font-family: inter;
+  font-family: Inter;
   font-weight: 400;
   font-size: 11px;
   margin-left: 115px;
@@ -1120,7 +1153,7 @@ label{
 }
 
 .email-label{
-  font-family: inter;
+  font-family: Inter;
   font-weight: 400;
   font-size: 11px;
   margin-left: 117px;
@@ -1129,7 +1162,7 @@ label{
 }
 
 .phone-number-label{
-  font-family: inter;
+  font-family: Inter;
   font-weight: 400;
   font-size: 11px;
   margin-left: 101px;
@@ -1137,11 +1170,21 @@ label{
   float: left;
 }
 
+/* Patients details */
+.patients-container-overflow{
+  width: 730px;
+  height: 530px;
+  overflow-x: auto;
+  margin-top: 21px;
+  /* background: rgba(67, 113, 243, 0.3); */
+  background: transparent;
+  float: left;
+}
+
 .patients-detail-container-one{
   width: 706px;
   height: 60px;
-  margin-top: 21px;
-  background: #D9D9D9;
+  background: #8595A8;
   border-radius: 8px;
   float: left;
 }
@@ -1227,7 +1270,7 @@ label{
   width: 706px;
   height: 60px;
   margin-top: 18px;
-  background: #D9D9D9;
+  background: #8595A8;
   border-radius: 8px;
   float: left;
 }
@@ -1287,7 +1330,7 @@ label{
   height: 17px;
   margin-top: 22px;
   margin-left: 23px;
-   background-image: url("../src/Assets/X\ Icon.png");
+  background-image: url("../src/Assets/X\ Icon.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1313,7 +1356,7 @@ label{
   width: 706px;
   height: 60px;
   margin-top: 18px;
-  background: #D9D9D9;
+  background: #8595A8;
   border-radius: 8px;
   float: left;
 }
@@ -1373,7 +1416,7 @@ label{
   height: 17px;
   margin-top: 22px;
   margin-left: 23px;
-   background-image: url("../src/Assets/X\ Icon.png");
+  background-image: url("../src/Assets/X\ Icon.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1399,7 +1442,7 @@ label{
   width: 706px;
   height: 60px;
   margin-top: 18px;
-  background: #D9D9D9;
+  background: #8595A8;
   border-radius: 8px;
   float: left;
 }
@@ -1459,7 +1502,7 @@ label{
   height: 17px;
   margin-top: 22px;
   margin-left: 23px;
-   background-image: url("../src/Assets/X\ Icon.png");
+  background-image: url("../src/Assets/X\ Icon.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1485,7 +1528,7 @@ label{
   width: 706px;
   height: 60px;
   margin-top: 18px;
-  background: #D9D9D9;
+  background: #8595A8;
   border-radius: 8px;
   float: left;
 }
@@ -1545,7 +1588,7 @@ label{
   height: 17px;
   margin-top: 22px;
   margin-left: 23px;
-   background-image: url("../src/Assets/X\ Icon.png");
+  background-image: url("../src/Assets/X\ Icon.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1571,7 +1614,7 @@ label{
   width: 706px;
   height: 60px;
   margin-top: 18px;
-  background: #D9D9D9;
+  background: #8595A8;
   border-radius: 8px;
   float: left;
 }
@@ -1631,7 +1674,7 @@ label{
   height: 17px;
   margin-top: 22px;
   margin-left: 23px;
-   background-image: url("../src/Assets/X\ Icon.png");
+  background-image: url("../src/Assets/X\ Icon.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1657,7 +1700,7 @@ label{
   width: 706px;
   height: 60px;
   margin-top: 18px;
-  background: #D9D9D9;
+  background: #8595A8;
   border-radius: 8px;
   float: left;
 }
@@ -1717,7 +1760,7 @@ label{
   height: 17px;
   margin-top: 22px;
   margin-left: 23px;
-   background-image: url("../src/Assets/X\ Icon.png");
+  background-image: url("../src/Assets/X\ Icon.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1737,6 +1780,181 @@ label{
   border-radius: 360px;
   float: left;
 }
+
+
+/* Patient Eight */
+.patients-detail-container-eight{
+  width: 706px;
+  height: 60px;
+  margin-top: 18px;
+  background: #8595A8;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-profile-eight{
+  width: 50px;
+  height: 50px;
+  margin-left: 14px;
+  margin-top: 5px;
+  border: 1px solid #000000;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-name-eight{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 11.51px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-surname-eight{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-email-eight{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-phone-number-eight{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-remove-btn-eight{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-remove-btn-eight:hover{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon\ Hovered.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
+
+/* Patient Nine */
+.patients-detail-container-nine{
+  width: 706px;
+  height: 60px;
+  margin-top: 18px;
+  background: #8595A8;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-profile-nine{
+  width: 50px;
+  height: 50px;
+  margin-left: 14px;
+  margin-top: 5px;
+  border: 1px solid #000000;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-name-nine{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 11.51px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-surname-nine{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-email-nine{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-phone-number-nine{
+  width: 114px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 40.2px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-remove-btn-nine{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-remove-btn-nine:hover{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon\ Hovered.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
 
 /* Patients Edit Container */
 .edit-patients-detail-container{
@@ -1835,6 +2053,16 @@ label{
   height: 26px;
   margin-top: 38.41px;
   margin-left: 17px;
+  background: #FFFFFF;
+  border-radius: 9px;
+  float: left;
+}
+
+.update-btn{
+  width: 133px;
+  height: 27px;
+  margin-top: 54px;
+  margin-left: 46px;
   background: #FFFFFF;
   border-radius: 9px;
   float: left;

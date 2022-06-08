@@ -6,7 +6,10 @@ const Patient = () => {
     return(
         <>
         <div className='main-container'>
-            <div className='vert-nav-bar'></div>
+            <div className='vert-nav-bar'>
+                <div className='patients-logo-box'></div>
+                <p className='patients-cerebrosano'>CerebroSano</p>
+            </div>
             <div className='patients-detail-container'>
                 <p className='patients-text'>Patients</p>
                 <div className='patients-header'>
@@ -15,6 +18,7 @@ const Patient = () => {
                     <p className='email-label'>Email</p>
                     <p className='phone-number-label'>Phone Number</p>
                 </div>
+                <div className='patients-container-overflow'>
                 <div className='patients-detail-container-one'>
                     <div className='patients-profile-one'></div>
                     <div className='patients-name-one'></div>
@@ -71,6 +75,23 @@ const Patient = () => {
                     <div className='patients-phone-number-seven'></div>
                     <div className='patients-remove-btn-seven'></div>
                 </div>
+                <div className='patients-detail-container-eight'>
+                    <div className='patients-profile-eight'></div>
+                    <div className='patients-name-eight'></div>
+                    <div className='patients-surname-eight'></div>
+                    <div className='patients-email-eight'></div>
+                    <div className='patients-phone-number-eight'></div>
+                    <div className='patients-remove-btn-eight'></div>
+                </div>
+                <div className='patients-detail-container-nine'>
+                    <div className='patients-profile-nine'></div>
+                    <div className='patients-name-nine'></div>
+                    <div className='patients-surname-nine'></div>
+                    <div className='patients-email-nine'></div>
+                    <div className='patients-phone-number-nine'></div>
+                    <div className='patients-remove-btn-nine'></div>
+                </div>
+            </div>
             </div>
             <div className='edit-patients-detail-container'>
                 <div className='edit-patients-profile'></div>
@@ -82,7 +103,9 @@ const Patient = () => {
                 <div className='edit-patients-phone-number'></div>
                 <div className='edit-patients-id'></div>
                 <div className='edit-patients-medical-aid-number'></div>
+                <div className='update-btn'></div>
             </div>
+            
             {/* <a href="indipatient" onClick={Patient}>
                 <div className='patient-profile-img'></div></a>
                 <div className='patient-name-box'></div>
