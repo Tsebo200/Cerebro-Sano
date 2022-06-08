@@ -1209,6 +1209,19 @@ label{
   float: left;
 }
 
+.patients-remove-btn-one:hover{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon\ Hovered.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
 /* Patient Two */
 .patients-detail-container-two{
   width: 706px;
@@ -1275,6 +1288,19 @@ label{
   margin-top: 22px;
   margin-left: 23px;
    background-image: url("../src/Assets/X\ Icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-remove-btn-two:hover{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon\ Hovered.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1355,6 +1381,19 @@ label{
   float: left;
 }
 
+.patients-remove-btn-three:hover{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon\ Hovered.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
 /* Patients Four */
 .patients-detail-container-four{
   width: 706px;
@@ -1421,6 +1460,19 @@ label{
   margin-top: 22px;
   margin-left: 23px;
    background-image: url("../src/Assets/X\ Icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-remove-btn-four:hover{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon\ Hovered.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1500,6 +1552,20 @@ label{
   border-radius: 360px;
   float: left;
 }
+
+.patients-remove-btn-five:hover{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon\ Hovered.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
 /* Patient Six */
 .patients-detail-container-six{
   width: 706px;
@@ -1572,6 +1638,20 @@ label{
   border-radius: 360px;
   float: left;
 }
+
+.patients-remove-btn-six:hover{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon\ Hovered.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
 /* Patient Seven */
 .patients-detail-container-seven{
   width: 706px;
@@ -1644,6 +1724,20 @@ label{
   border-radius: 360px;
   float: left;
 }
+
+.patients-remove-btn-seven:hover{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon\ Hovered.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
 /* Patients Edit Container */
 .edit-patients-detail-container{
   width: 224px;
