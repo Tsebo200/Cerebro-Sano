@@ -14,8 +14,11 @@ const Patient = () => {
                 <p className='dashboard-nav-text'>Dashboard</p>
                 </div>
                 <div className='patients-nav-container'>
+                {/* <span></span>
+                <span></span> */}
                 <div className='patients-nav-icon'></div>
                 <p className='patients-nav-text'>Patients</p>
+              
                 </div>
                 <div className='doctors-nav-container'>
                 <div className='doctors-nav-icon'></div>

@@ -6,8 +6,35 @@ const Home = () => {
 
     return(
         <>
-            <div className="header"></div>
+            {/* <div className="header"></div> */}
+           
             <div className="main-container">
+            <div className='vert-nav-bar'>
+                <div className='patients-logo-box'></div>
+                <p className='patients-cerebrosano'>CerebroSano</p>
+                <div className='dashboard-nav-container'>
+                <div className='dashboard-nav-icon'></div>
+                <p className='dashboard-nav-text'>Dashboard</p>
+                </div>
+            <div className='patients-nav-container'>
+                {/* <span></span>
+                <span></span> */}
+                <div className='patients-nav-icon'></div>
+                <p className='patients-nav-text'>Patients</p>
+            </div>
+            <div className='doctors-nav-container'>
+                <div className='doctors-nav-icon'></div>
+                <p className='doctors-nav-text'>Doctors</p>
+                </div>
+                <div className='signin-nav-container'>
+                <div className='signin-nav-icon'></div>
+                <p className='signin-nav-text'>Sign in</p>
+                </div>
+                <div className='register-nav-container'>
+                <div className='register-nav-icon'></div>
+                <p className='register-nav-text'>Register</p>
+                </div>
+            </div>
                 <div className="calendar-container">
                     <div className="cal-time-container">
                         <div className="time-container">

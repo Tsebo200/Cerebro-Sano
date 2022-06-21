@@ -736,6 +736,8 @@ label{
   height: 276px;
   overflow-x: auto;
   background-color: #717171;
+  /* margin-top: -275px;
+  float: left; */
 }
 
 .appoint-card-container{
@@ -1065,11 +1067,11 @@ label{
 }
 /* New Patients */
 .vert-nav-bar{
-  width: 219px;
+  width: 224px;
   height: 100vh;
-  margin-left: 120px;
+  margin-left: 10px;
   background: #A4B0BE;
-  border-radius: 38px 0px 0px 38px;
+  border-radius: 45px 0px 0px 45px;
   float: left;
 }
 
@@ -1141,13 +1143,52 @@ label{
 .patients-nav-container{
   width: 197px;
   height: 54px;
-  margin-left: 17.4px;
+  margin-left: 13px;
   margin-top: 14px;
   /* background: rgba(79, 80, 173, 0.3); */
   background-color: #2F3542;
   border-radius: 33px;
   float: left;
 }
+
+/* 
+.patients-nav-container {
+  width: 200px;
+  height: 40px;
+  position: relative;
+  background: white;
+  border-radius: 20px 0 0 20px;
+}
+
+.patients-nav-container span {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  background: white;
+}
+
+.patients-nav-container span:nth-child( 1 ) {
+  bottom: 100%;
+}
+
+.patients-nav-container span:nth-child( 2 ) {
+  top: 100%;
+}
+
+.patients-nav-container span::before {
+  content: '';
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  right: 0;
+  background: blue;
+  border-radius: 50%;
+}
+
+.patients-nav-container span:nth-child( 1 )::before {
+  bottom: 0;
+} */
 
 .patients-nav-icon{
   width: 30px;
@@ -1157,8 +1198,8 @@ label{
   background-position: center;
   background-size: cover;
   /* background: #D9D9D9; */
-  margin-top: 14px;
-  margin-left: 17.6px;
+  margin-top: 12px;
+  margin-left: 20px;
   float: left;
 }
 
@@ -1215,9 +1256,12 @@ label{
 }
 
 .signin-nav-icon{
-  width: 29px;
-  height: 26px;
-  background: #D9D9D9;
+  width: 30px;
+  height: 30px;
+  background-image: url('../src/Assets/Sign\ Icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   margin-top: 14px;
   margin-left: 17.6px;
   float: left;
@@ -1243,9 +1287,12 @@ label{
 }
 
 .register-nav-icon{
-  width: 29px;
-  height: 26px;
-  background: #D9D9D9;
+  width: 30px;
+  height: 30px;
+  background-image: url('../src/Assets/Register\ Icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   margin-top: 14px;
   margin-left: 17.6px;
   float: left;
@@ -1263,19 +1310,17 @@ label{
 
 /* Start of patients details */
 .patients-detail-container{
-  width: 706px;
+  width: 900px;
   height: 745px;
-  /* background: rgba(217, 217, 217, 0.2); */
-  background-color: transparent;
+  background: rgba(217, 217, 217, 0.2);
+  /* background-color: transparent; */
   margin-top: 20px;
   margin-left: 28px;
   float: left;
 }
 
-
-
 .patients-header{
-  width: 706px;
+  width: 900px;
   height: 25px;
   margin-top: 183px;
   border-radius: 8px;
@@ -1287,7 +1332,7 @@ label{
   font-family: Inter;
   font-weight: 400;
   font-size: 11px;
-  margin-left: 117px;
+  margin-left: 130px;
   margin-top: 6px;
   float: left;
 }
@@ -1296,7 +1341,7 @@ label{
   font-family: Inter;
   font-weight: 400;
   font-size: 11px;
-  margin-left: 115px;
+  margin-left: 171px;
   margin-top: 6px;
   float: left;
 }
@@ -1305,7 +1350,7 @@ label{
   font-family: Inter;
   font-weight: 400;
   font-size: 11px;
-  margin-left: 117px;
+  margin-left: 173px;
   margin-top: 6px;
   float: left;
 }
@@ -1314,14 +1359,14 @@ label{
   font-family: Inter;
   font-weight: 400;
   font-size: 11px;
-  margin-left: 101px;
+  margin-left: 157px;
   margin-top: 6px;
   float: left;
 }
 
 /* Patients details */
 .patients-container-overflow{
-  width: 730px;
+  width: 900px;
   height: 530px;
   overflow-x: auto;
   margin-top: 21px;
@@ -1331,7 +1376,7 @@ label{
 }
 
 .patients-detail-container-one{
-  width: 706px;
+  width: 900px;
   height: 60px;
   background: #8595A8;
   border-radius: 8px;
@@ -1349,7 +1394,7 @@ label{
 }
 
 .patients-name-one{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
   margin-left: 11.51px;
@@ -1359,30 +1404,30 @@ label{
 }
 
 .patients-surname-one{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
 }
 
 .patients-email-one{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
 }
 
 .patients-phone-number-one{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
@@ -1416,7 +1461,7 @@ label{
 
 /* Patient Two */
 .patients-detail-container-two{
-  width: 706px;
+  width: 900px;
   height: 60px;
   margin-top: 18px;
   background: #8595A8;
@@ -1435,7 +1480,7 @@ label{
 }
 
 .patients-name-two{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
   margin-left: 11.51px;
@@ -1445,30 +1490,30 @@ label{
 }
 
 .patients-surname-two{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
 }
 
 .patients-email-two{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
 }
 
 .patients-phone-number-two{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
@@ -1502,7 +1547,7 @@ label{
 
 /*  Patient Three*/
 .patients-detail-container-three{
-  width: 706px;
+  width: 900px;
   height: 60px;
   margin-top: 18px;
   background: #8595A8;
@@ -1521,7 +1566,7 @@ label{
 }
 
 .patients-name-three{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
   margin-left: 11.51px;
@@ -1531,30 +1576,30 @@ label{
 }
 
 .patients-surname-three{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
 }
 
 .patients-email-three{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
 }
 
 .patients-phone-number-three{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
@@ -1588,7 +1633,7 @@ label{
 
 /* Patients Four */
 .patients-detail-container-four{
-  width: 706px;
+  width: 900px;
   height: 60px;
   margin-top: 18px;
   background: #8595A8;
@@ -1607,7 +1652,7 @@ label{
 }
 
 .patients-name-four{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
   margin-left: 11.51px;
@@ -1617,30 +1662,30 @@ label{
 }
 
 .patients-surname-four{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
 }
 
 .patients-email-four{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
 }
 
 .patients-phone-number-four{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
@@ -1674,7 +1719,7 @@ label{
 
 /* Patient Five */
 .patients-detail-container-five{
-  width: 706px;
+  width: 900px;
   height: 60px;
   margin-top: 18px;
   background: #8595A8;
@@ -1693,7 +1738,7 @@ label{
 }
 
 .patients-name-five{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
   margin-left: 11.51px;
@@ -1703,30 +1748,30 @@ label{
 }
 
 .patients-surname-five{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
 }
 
 .patients-email-five{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
 }
 
 .patients-phone-number-five{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
@@ -1760,7 +1805,7 @@ label{
 
 /* Patient Six */
 .patients-detail-container-six{
-  width: 706px;
+  width: 900px;
   height: 60px;
   margin-top: 18px;
   background: #8595A8;
@@ -1779,7 +1824,7 @@ label{
 }
 
 .patients-name-six{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
   margin-left: 11.51px;
@@ -1789,30 +1834,30 @@ label{
 }
 
 .patients-surname-six{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
 }
 
 .patients-email-six{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
 }
 
 .patients-phone-number-six{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
@@ -1846,7 +1891,7 @@ label{
 
 /* Patient Seven */
 .patients-detail-container-seven{
-  width: 706px;
+  width: 900px;
   height: 60px;
   margin-top: 18px;
   background: #8595A8;
@@ -1865,7 +1910,7 @@ label{
 }
 
 .patients-name-seven{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
   margin-left: 11.51px;
@@ -1875,30 +1920,30 @@ label{
 }
 
 .patients-surname-seven{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
 }
 
 .patients-email-seven{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
 }
 
 .patients-phone-number-seven{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
@@ -1933,7 +1978,7 @@ label{
 
 /* Patient Eight */
 .patients-detail-container-eight{
-  width: 706px;
+  width: 900px;
   height: 60px;
   margin-top: 18px;
   background: #8595A8;
@@ -1952,7 +1997,7 @@ label{
 }
 
 .patients-name-eight{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
   margin-left: 11.51px;
@@ -1962,30 +2007,30 @@ label{
 }
 
 .patients-surname-eight{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
 }
 
 .patients-email-eight{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
 }
 
 .patients-phone-number-eight{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
@@ -2020,7 +2065,7 @@ label{
 
 /* Patient Nine */
 .patients-detail-container-nine{
-  width: 706px;
+  width: 900px;
   height: 60px;
   margin-top: 18px;
   background: #8595A8;
@@ -2039,7 +2084,7 @@ label{
 }
 
 .patients-name-nine{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
   margin-left: 11.51px;
@@ -2049,30 +2094,30 @@ label{
 }
 
 .patients-surname-nine{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
 }
 
 .patients-email-nine{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
 }
 
 .patients-phone-number-nine{
-  width: 114px;
+  width: 140px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 40.2px;
+  margin-left: 70px;
   background: #FFFFFF;
   border-radius: 8px;
   float: left;
@@ -2107,13 +2152,11 @@ label{
 
 /* Patients Edit Container */
 .edit-patients-detail-container{
-  width: 224px;
-  height: 803px;
-  width: 219px;
+  width: 234px;
   height: 100vh;
-  margin-left: 28px;
+  margin-left: 30px;
   background: #A4B0BE;
-  border-radius: 0px 38px 38px 0px;
+  border-radius: 0px 45px 45px 0px;
   float: left;
 }
 
