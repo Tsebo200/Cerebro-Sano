@@ -46,6 +46,7 @@ const Home = () => {
                         <div className="bottom-chevron-two"></div>
                         <div className="book-btn"></div>
                         </div>
+                <div className="new-appoint-container"></div>
                         <div className="month-left-chevron"></div>
                         <div className="date-year-box"></div>
                         <div className="month-right-chevron"></div>
