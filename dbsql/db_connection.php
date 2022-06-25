@@ -5,6 +5,6 @@ $dbuser = "root";
 $dbpassword = "root";
 $db = "Doctors";
 
-$conn = new mysli($dbhost, $dbuser, $dbpassword, $db);
+$conn = new mysqli($dbhost, $dbuser, $dbpassword, $db);
 
 ?>

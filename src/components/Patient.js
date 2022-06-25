@@ -43,7 +43,9 @@ const Patient = () => {
                 <div className='patients-container-overflow'>
                 <div className='patients-detail-container-one'>
                     <div className='patients-profile-one'></div>
-                    <div className='patients-name-one'></div>
+                    <div className='patients-name-one'>
+                    <p className='p-name'></p>
+                    </div>
                     <div className='patients-surname-one'></div>
                     <div className='patients-email-one'></div>
                     <div className='patients-phone-number-one'></div>

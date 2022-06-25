@@ -1368,6 +1368,25 @@ label{
   background-color: #636E72;
   float: left;
 }
+/* 
+.row_item{
+  width: 85%;
+  margin: 0 auto;
+  float: left;
+  height: 55px;
+  margin-bottom: 25px;
+  background-color: #ffffff;
+  padding-left: 15px;
+  margin-left: 5%;
+  border-radius: 5px;
+  box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.18);
+-webkit-box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.18);
+-moz-box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.18);
+}
+.row_item p{
+ float: left;
+ margin-right: 15px;
+} */
 
 .patients-detail-container-two{
   width: 1440px;
@@ -1375,6 +1394,14 @@ label{
   margin-top: 44px;
   background-color: #636E72;
   float: left;
+}
+
+.p-name{
+  font-family: 'Inter';
+  margin-top: 3px;
+  font-weight: 400;
+  font-size: 11px;
+  text-align: center;
 }
 
 .patients-detail-container-three{
