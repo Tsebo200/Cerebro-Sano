@@ -1,8 +1,16 @@
 import React from 'react';
 import axios from 'axios';
+import { useState } from 'react';
 
 const SignIn = () => {
    
+    const [inputs, setInputs] = useState({});
+
+    const handleChange = (event) => {
+        const name = event.target.name;
+        const value = event.target.value;
+        setInputs(values => ({...values, [name]: value}));
+    }
     return(
         <>
         <div className='main-container'>
