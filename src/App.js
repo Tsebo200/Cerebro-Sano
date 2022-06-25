@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import SignIn from './components/SignUp';
+import SignIn from './components/SignIn';
 import Navigation from './components/Navigation';
 import Home from './components/Home';
 import Patient from './components/Patient';
