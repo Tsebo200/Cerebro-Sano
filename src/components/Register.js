@@ -146,8 +146,7 @@ const passwordConVal = (e) => {
 
 const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(inputs);
-
+    console.log(inputs)
     if(inputs.first === ''){
         setFirstError(<MiniModalLeft message="What's Your Name"/>);
     } else {
@@ -204,14 +203,17 @@ const handleSubmit = (e) => {
 
     let result = Object.values(inputs).some(o => o === '');
     if(result){
-        console.log("There is an Error");
+        console.log("There is an Error")
     } else {
         axios.post('http://localhost:8888/api/addUser.php', inputs)
         .then(function(res){
             console.log(res);
 
-            if(res.status === 200){
+            if(res.data === "Error"){
                 navigate("/register");
+            } else if(res.status === 200){
+                navigate("/");
+
             }
         });
     }
