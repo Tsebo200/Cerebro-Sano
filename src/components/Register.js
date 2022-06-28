@@ -2,8 +2,9 @@ import React from "react";
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import MiniModalLeft from "./MiniModalLeft";
+import MiniModalRightContact from "./MiniModalRightContact";
 import MiniModalRight from "./MiniModalRight";
+import MiniModalRightEmail from "./MiniModalRightEmail";
 import Okay from '../Assets/okay.svg';
 import NotOkay from '../Assets/notOkay.svg';
 
@@ -90,7 +91,7 @@ const emailVal = (e) => {
     setInputs({...inputs, email: value});
     if(inputs.email !== ''){setEmailError();}
     if(value.match(mailRegex)){
-        setEmailError(<MiniModalLeft message="Email is not a valid format..." />);
+        setEmailError(<MiniModalRightEmail message="Email is not a valid format..." />);
     }
 }
 
@@ -104,7 +105,7 @@ const authenticateEmail = () => {
             setEmailAvail();
         } else if(res.data === "Not Available"){
             setEmailIcon(NotOkay);
-            setEmailAvail(<MiniModalLeft message="Email is not Available" />);
+            setEmailAvail(<MiniModalRightEmail message="Email is not Available" />);
         } else if(res.data === ''){
             setEmailIcon();
             setEmailAvail();
@@ -119,7 +120,7 @@ const contactVal = (e) => {
     setInputs({...inputs, contact: value});
     if(inputs.contact !== ''){setContactError();}
     if(value.match(contactRegex)){
-        setContactError(<MiniModalRight message="This is not a phone number..." />);
+        setContactError(<MiniModalRightContact message="This is not a phone number..." />);
     }
 }
 
@@ -130,7 +131,7 @@ const passwordVal = (e) => {
     setInputs({...inputs, password: value});
     if(inputs.password !== ''){setPasswordError();}
     if(value.match(passwordRegex)){
-        setPasswordError(<MiniModalLeft message="Password must include X, Y and Z..." />);
+        setPasswordError(<MiniModalRight message="Password must include X, Y and Z..." />);
     }
 }
 
@@ -140,7 +141,7 @@ const passwordConVal = (e) => {
     if(inputs.password === value){
         setPasswordConError();
     } else{
-        setPasswordConError(<MiniModalLeft message="Your password does not match"/>);
+        setPasswordConError(<MiniModalRight message="Your password does not match"/>);
     }
 }
 
@@ -148,7 +149,7 @@ const handleSubmit = (e) => {
     e.preventDefault();
     console.log(inputs)
     if(inputs.first === ''){
-        setFirstError(<MiniModalLeft message="What's Your Name"/>);
+        setFirstError(<MiniModalRight message="What's Your Name"/>);
     } else {
         setFirstError();
     }
@@ -178,25 +179,25 @@ const handleSubmit = (e) => {
     }
 
     if(inputs.email === ''){
-        setEmailError(<MiniModalLeft message="Please provide your email"/>);
+        setEmailError(<MiniModalRight message="Please provide your email"/>);
     } else {
         setEmailError();
     }
 
     if(inputs.contact === ''){
-        setContactError(<MiniModalRight message="Please provide your contact details"/>);
+        setContactError(<MiniModalRightContact message="Please provide your contact details"/>);
     } else {
         setContactError();
     }
 
     if(inputs.password === ''){
-        setPasswordError(<MiniModalLeft message="Please provide your password"/>);
+        setPasswordError(<MiniModalRight message="Please provide your password"/>);
     } else {
         setPasswordError();
     }
 
     if(inputs.passwordCon === ''){
-        setPasswordConError(<MiniModalLeft message="Please confirm your password"/>);
+        setPasswordConError(<MiniModalRight message="Please confirm your password"/>);
     } else {
         setPasswordConError();
     }

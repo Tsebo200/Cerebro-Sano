@@ -1,10 +1,10 @@
 import React from 'react'
 import ErrorAsset from '../Assets/error.svg';
 
-const MiniModalRight = (props) => {
+const MiniModalRightEmail = (props) => {
   return (
     <>
-      <div className='alertMiniModalRight'>
+    <div className='alertMiniModalRightEmail'>
           <img src={ErrorAsset} />
           <p>{props.message}</p> 
       </div>
@@ -12,4 +12,8 @@ const MiniModalRight = (props) => {
   )
 }
 
-export default MiniModalRight
+export default MiniModalRightEmail
+
+
+
+

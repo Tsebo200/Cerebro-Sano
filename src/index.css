@@ -1,0 +1,2893 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+
+html, body, p, li, ul, h1{
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #FF4757;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #2F3542;
+}
+
+.main-container{
+  width: 100%;
+  height: 100vh;
+  background-color: #2F3542;
+}
+
+.nav-bar{
+  width: 100%;
+  height: 7vh;
+  background-color: #A4B0BE;
+  float: left;
+}
+
+.logo{
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+  background-image: url("../src/Assets/Logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: 20px;
+  margin-top: 0px;
+  float: left;
+}
+
+.logo:hover{
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+  background-image: url("../src/Assets/Logo\ Hover.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: 20px;
+  margin-top: 0px;
+  float: left;
+}
+
+.homeli{
+  list-style-type: none;
+  font-size: 22px;
+  margin-left: 80px;
+  margin-top: 15px;
+  font-family: Inter;
+  float: left;
+}
+
+.patientli{
+  list-style-type: none;
+  font-size: 22px;
+  margin-left: 280px;
+  margin-top: 15px;
+  font-family: Inter;
+  float: left;
+}
+
+.doctorli{
+  list-style-type: none;
+  font-size: 22px;
+  margin-left: 280px;
+  margin-top: 15px;
+  font-family: Inter;
+  float: left;
+}
+
+.signinli{
+  list-style-type: none;
+  font-size: 22px;
+  margin-left: 280px;
+  margin-top: 15px;
+  font-family: Inter;
+  float: left;
+}
+
+/* Sign In Page */
+.sign-container{
+  width: 1203px;
+  height: 100vh;
+  margin-left: 115px;
+  border-radius: 15px;
+  background-color: #74B9FF;
+  float: left;
+}
+
+.left{
+  width: 602px;
+  height: 100%;
+  border-radius: 15px 0px 0px 15px;
+  background-color: transparent;
+  float: left;
+}
+
+.sign-logo{
+  width: 50.45px;
+  height: 47.09px;
+  margin-top: 96px;
+  margin-left: 133px;
+  background-image: url("../src/Assets/Logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: left;
+}
+
+.sign-logo:hover{
+  width: 50.45px;
+  height: 47.09px;
+  margin-top: 96px;
+  margin-left: 133px;
+  background-image: url("../src/Assets/Logo\ Hover.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: left;
+}
+
+.cerebro-sano{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 110px;
+  margin-left: 5.55px;
+  float: left;
+}
+
+.right{
+  width: 602px;
+  height: 100vh;
+  margin-left: 601px;
+  margin-top: -100vh;
+  border-radius: 0px 15px 15px 0px;
+  background-image: url("../src/Assets/right.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: left;
+}
+
+.login-text{
+  margin-top: 197px;
+  margin-left: -140px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 33px;
+  float: left;
+}
+
+.welcome-login-text{
+  margin-top: 250px;
+  margin-left: -140px;
+  font-family: Inter;
+  font-weight: 300;
+  float: left;
+}
+
+.email-text{
+  margin-top: 30px;
+  margin-left: 151px;
+  font-family: Inter;
+  font-weight: 300;
+  float: left;
+}
+
+.password-text{
+  margin-top: 25px;
+  margin-left: 151px;
+  font-family: Inter;
+  font-weight: 300;
+  float: left;
+}
+
+.email-input{
+  width: 301px;
+  height: 35px;
+  border: 1px solid grey;
+  background-color: #f7f7f7;
+  border-radius: 9px;
+  padding-left: 4%;
+  margin-top: 60px;
+  margin-left: -40px;
+  float: left;
+}
+
+.password-input{
+  width: 301px;
+  height: 35px;
+  /* outline-style: none; */
+  border: 1px solid grey;
+  background-color: #f7f7f7;
+  border-radius: 9px;
+  padding-left: 4%;
+  margin-top: 55px;
+  margin-left: -70px;
+  float: left;
+}
+
+.check-box{
+  width: 12px;
+  height: 12px;
+  margin-left: 162px;
+  margin-top: 22px;
+  background-color: white;
+  float: left;
+}
+
+label{
+  font-size: 12px;
+  font-family: Inter;
+  letter-spacing: -0.042em;
+  font-weight: 400;
+  margin-left: 7px;
+  margin-top: 20px;
+  float: left;
+}
+
+.forgot-password-text{
+  margin-top: 19px;
+  margin-left: 65px;
+  font-size: 13px;
+  font-family: Inter;
+  font-weight: 400;
+  color: blue;
+  float: left;
+}
+
+.btn-container{
+  width: 301px;
+  height: 39px;
+  margin-left: 165px;
+  margin-top: 20px;
+  border-radius: 9px;
+  background-color: #0984e3;
+  float: left;
+}
+
+.signIn-btn{
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: 300;
+  margin-left: 130px;
+  margin-top: 11px;
+  color: white;
+  float: left; 
+}
+
+.no-account-text{
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  margin-top: 15px;
+  margin-left: 210px;
+  float: left;
+}
+
+.signin-text{
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 300;
+  margin-top: 15px;
+  margin-left: 5px;
+  color: blue;
+  float: left;
+}
+
+.SignIn-Google-btn{
+  width: 301px;
+  height: 39px;
+  border: 1px solid grey;
+  margin-left: 165px;
+  margin-top: 14px;
+  background-image: url("../src/Assets/Google.png");
+  background-repeat: no-repeat;
+  background-position: 75px;
+  background-size: 22px 22px;
+  border-radius: 9px;
+  background-color: white;
+  float: left;
+}
+
+.Sign-Google-text{
+  font-family: Inter;
+  font-weight: 400px;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: -0.006em;
+  margin-left: 27px;
+  margin-top: 12px;
+}
+
+/* Register */
+.sign-container{
+  width: 1203px;
+  height: 100vh;
+  margin-left: 115px;
+  border-radius: 15px;
+  background-color: #74B9FF;
+  float: left;
+}
+
+.left-reg{
+  width: 602px;
+  height: 100%;
+  border-radius: 15px 0px 0px 15px;
+  background-image: url("../src/Assets/left.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: left;
+}
+
+.right-reg{
+  width: 602px;
+  height: 100%;
+  margin-left: 601px;
+  margin-top: -100vh;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #74B9FF;;
+  float: left;
+}
+
+.sign-logo-reg{
+  width: 50.45px;
+  height: 47.09px;
+  margin-top: 24px;
+  margin-left: 133px;
+  background-image: url("../src/Assets/Logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: left;
+}
+
+.sign-logo-reg:hover{
+  width: 50.45px;
+  height: 47.09px;
+  margin-top: 24px;
+  margin-left: 133px;
+  background-image: url("../src/Assets/Logo\ Hover.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: left;
+}
+
+.cerebro-sano-reg{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 36px;
+  margin-left: 5.55px;
+  float: left;
+}
+
+.create-account-text{
+  margin-top: 20px;
+  margin-left: 151px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 33px;
+  float: left;
+}
+
+.already-member-text{
+  margin-top: 13px;
+  margin-left: 151px;
+  font-family: Inter;
+  font-weight: 300;
+  float: left;
+}
+
+.signin-text-reg{
+  margin-top: 13px;
+  margin-left: 5px;
+  font-family: Inter;
+  font-weight: 300;
+  color: blue;
+  float: left;
+}
+
+.first-name-text{
+  margin-top: 70px;
+  margin-left: -200px;
+  font-family: Inter;
+  font-weight: 300;
+  float: left;
+}
+
+.first-name-input{
+  width: 139px;
+  height: 35px;
+  border: 1px solid grey;
+  background-color: #f7f7f7;
+  border-radius: 9px;
+  padding-left: 11px;
+  margin-top: 95px;
+  margin-left: -200px;
+  float: left;
+}
+
+.last-name-text{
+  margin-top: 70px;
+  margin-left: -32px;
+  font-family: Inter;
+  font-weight: 300;
+  float: left;
+}
+
+.last-name-input{
+  width: 139px;
+  height: 35px;
+  border: 1px solid grey;
+  background-color: #f7f7f7;
+  border-radius: 9px;
+  padding-left: 11px;
+  margin-top: 95px;
+  margin-left: -82px;
+  float: left;
+}
+
+.age-text{
+  margin-top: 150px;
+  margin-left: -318px;
+  font-family: Inter;
+  font-weight: 300;
+  float: left;
+}
+
+.age-input{
+  width: 139px;
+  height: 35px;
+  border: 1px solid grey;
+  background-color: #f7f7f7;
+  border-radius: 9px;
+  padding-left: 11px;
+  margin-top: 176px;
+  margin-left: -318px;
+  float: left; 
+}
+
+
+.gender-text{
+  margin-top: 150px;
+  margin-left: -153px;
+  font-family: Inter;
+  font-weight: 300;
+  float: left;
+}
+
+.gender-input{
+  width: 139px;
+  height: 35px;
+  border: 1px solid grey;
+  background-color: #f7f7f7;
+  border-radius: 9px;
+  padding-left: 11px;
+  margin-top: 176px;
+  margin-left: -153px;
+  float: left; 
+}
+
+.phone-number-text{
+  margin-top: 229px;
+  margin-left: -319px;
+  font-family: Inter;
+  font-weight: 300;
+  float: left;
+}
+
+.phone-number-input{
+  width: 315px;
+  height: 35px;
+  border: 1px solid grey;
+  background-color: #f7f7f7;
+  border-radius: 9px;
+  padding-left: 11px;
+  margin-top: 40px;
+  margin-left: 153px;
+  float: left;
+}
+
+.rank-text{
+  margin-top: 93px;
+  margin-left: -328px;
+  font-family: Inter;
+  font-weight: 300;
+  float: left;
+}
+
+.rank-input{
+  width: 315px;
+  height: 35px;
+  border: 1px solid grey;
+  background-color: #f7f7f7;
+  border-radius: 9px;
+  padding-left: 11px;
+  margin-top: 40px;
+  margin-left: 153px;
+  float: left;
+}
+
+.email-text-reg{
+  margin-top: 93px;
+  margin-left: -328px;
+  font-family: Inter;
+  font-weight: 300;
+  float: left;
+}
+
+.email-input-reg{
+  width: 315px;
+  height: 35px;
+  border: 1px solid grey;
+  background-color: #f7f7f7;
+  border-radius: 9px;
+  padding-left: 11px;
+  margin-top: 40px;
+  margin-left: 153px;
+  float: left;
+}
+
+.password-text-reg{
+  margin-top: 93px;
+  margin-left: -328px;
+  font-family: Inter;
+  font-weight: 300;
+  float: left;
+}
+
+.password-input-reg{
+  width: 315px;
+  height: 35px;
+  border: 1px solid grey;
+  background-color: #f7f7f7;
+  border-radius: 9px;
+  padding-left: 11px;
+  margin-top: 40px;
+  margin-left: 153px;
+  float: left;
+}
+
+.register-btn{
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: 300;
+  margin-left: 95px;
+  margin-top: 11px;
+  color: white;
+  float: left; 
+}
+
+.continue-Google-btn{
+  width: 301px;
+  height: 39px;
+  border: 1px solid grey;
+  margin-left: 165px;
+  margin-top: 14px;
+  background-image: url("../src/Assets/Google.png");
+  background-repeat: no-repeat;
+  background-position: 75px;
+  background-size: 22px 22px;
+  border-radius: 9px;
+  background-color: white;
+  float: left;
+}
+
+.continue-Google-text{
+  font-family: Inter;
+  font-weight: 400px;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: -0.006em;
+  margin-left: 37px;
+  margin-top: 12px;
+}
+/* Home Page */
+.header{
+  width: 1440px;
+  height: 400px;
+  background-image: url("../src/Assets/Header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.calendar-container{
+  width: 1440px;
+  height: 518px;
+  background-color: #2F3542;
+}
+
+/* left side */
+.time-container{
+  width: 395px;
+  height: 410px;
+  margin-left: 24px;
+  float: left;
+}
+
+.date-time-box{
+  width: 205px;
+  height: 30px;
+  margin-left: 95px;
+  margin-top: 46px;
+  float: left;
+}
+
+.top-chevron-one{
+  width: 28px;
+  height: 28px;
+  background-image: url("../src/Assets/Up\ Chev.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 35px;
+  margin-left: 141px;
+  float: left;
+}
+
+.top-chevron-two{
+  width: 28px;
+  height: 28px;
+  background-image: url("../src/Assets/Up\ Chev.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 35px;
+  margin-left: 52px;
+  float: left;
+}
+
+.top-chevron-one:hover{
+  width: 28px;
+  height: 28px;
+  background-image: url("../src/Assets/Up\ Hover\ Chev.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 35px;
+  margin-left: 141px;
+  float: left;
+}
+
+.top-chevron-two:hover{
+  width: 28px;
+  height: 28px;
+  background-image: url("../src/Assets/Up\ Hover\ Chev.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 35px;
+  margin-left: 52px;
+  float: left;
+}
+
+.time-appoint{
+  width: 164px;
+  height: 52px;
+  margin-left: 116px;
+  margin-top: 20px;
+  float: left;
+}
+
+.bottom-chevron-one{
+  width: 28px;
+  height: 28px;
+  background-image: url("../src/Assets/Down\ Chev.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 24px;
+  margin-left: 141px;
+  float: left;
+}
+
+.bottom-chevron-two{
+  width: 28px;
+  height: 28px;
+  background-image: url("../src/Assets/Down\ Chev.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 24px;
+  margin-left: 52px;
+  float: left;
+}
+
+.bottom-chevron-one:hover{
+  width: 28px;
+  height: 28px;
+  background-image: url("../src/Assets/Down\ Hover\ Chev.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 24px;
+  margin-left: 141px;
+  float: left;
+}
+
+.bottom-chevron-two:hover{
+  width: 28px;
+  height: 28px;
+  background-image: url("../src/Assets/Down\ Hover\ Chev.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 24px;
+  margin-left: 52px;
+  float: left;
+}
+
+.hour-container{
+  width: 70px;
+  height: 76px;
+  margin-top: -10px;
+  float: left;
+}
+
+.hour-text{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 58px;
+  text-align: center;
+}
+
+.colon-container{
+  width: 17px;
+  height: 55px;
+  float: left;
+}
+
+.colon-text{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 58px;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.minutes-container{
+  width: 70px;
+  height: 76px;
+  margin-top: -10px;
+  float: left;
+}
+
+.minutes-text{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 58px;
+  text-align: center;
+}
+
+.book-btn{
+  width: 110px;
+  height: 35px;
+  background: #2F3542;
+  border-radius: 29.5px;
+  margin-left: 62px;
+  margin-top: 36px;
+  float: left;
+}
+
+.book-text{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 5px;
+  color: #FFFFFF; 
+}
+
+.book-btn:hover{
+  width: 110px;
+  height: 35px;
+  background: #C8D0DA;
+  border-radius: 29.5px;
+  margin-left: 62px;
+  margin-top: 36px;
+  float: left;
+}
+
+.cal-time-container{
+  width: 395px;
+  height: 380px;
+  margin-left: 24px;
+  /* background-color: #353840; */
+  float: left;
+}
+
+/* Right Side */
+.month-left-chevron{
+  width: 28px;
+  height: 28px;
+  margin-top: 44px;
+  margin-left: 36px;
+  background-image: url("../src/Assets/Left\ Chev.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: left;
+}
+
+.month-left-chevron:hover{
+  width: 28px;
+  height: 28px;
+  margin-top: 44px;
+  margin-left: 36px;
+  background-image: url("../src/Assets/Left\ Hover\ Chev.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: left;
+}
+
+.date-year-box{
+  width: 128px;
+  height: 30px; 
+  /* background-color: #717171; */
+  margin-top: 42px;
+  margin-left: 71px;
+  float: left;
+}
+
+.date-year-text{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.month-right-chevron{
+  width: 28px;
+  height: 28px;
+  margin-top: 44px;
+  margin-left: 71px;
+  background-image: url("../src/Assets/Right\ Chev.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: left;
+}
+
+.month-right-chevron:hover{
+  width: 28px;
+  height: 28px;
+  margin-top: 44px;
+  margin-left: 71px;
+  background-image: url("../src/Assets/Right\ Hover\ Chev.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: left;
+}
+
+.week-box{
+  width: 326px;
+  height: 27px;
+  /* background-color: #717171; */
+  margin-left: 36px;
+  margin-top: 26px;
+  float: left;
+}
+
+.sun-text{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  float: left;
+}
+
+.mon-text{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 10px;
+  float: left;
+}
+
+.tue-text{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 10px;
+  float: left;
+}
+
+.wed-text{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 10px;
+  float: left;
+}
+
+.thu-text{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 10px;
+  float: left;
+}
+
+.fri-text{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 17px;
+  float: left;
+}
+
+.sat-text{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 22px;
+  float: left;
+}
+
+.calendar-box{
+  width: 326px;
+  height: 199px; 
+  margin-top: 13px;
+  margin-left: 36px;
+  /* background-color: #717171; */
+  float: left; 
+}
+
+.text-1{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 11px;
+  float: left;
+}
+
+.text-2{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 39px;
+  float: left;
+}
+
+.text-3{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 36px;
+  float: left;
+}
+
+
+.text-4{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 36px;
+  float: left;
+}
+
+.text-5{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 36px;
+  float: left;
+}
+
+.text-6{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 36px;
+  float: left;
+}
+
+.text-7{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 36px;
+  float: left;
+}
+
+.text-8{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 11px;
+  margin-top: 19px;
+  float: left;
+}
+
+.text-9{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 36px;
+  margin-top: 19px;
+  float: left;
+}
+
+.text-10{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 31px;
+  margin-top: 19px;
+  float: left;
+}
+
+.text-11{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 28px;
+  margin-top: 19px;
+  float: left;
+}
+
+.text-12{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 30px;
+  margin-top: 19px;
+  float: left;
+}
+
+.text-13{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 27px;
+  margin-top: 19px;
+  float: left;
+}
+
+.text-14{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 26px;
+  margin-top: 19px;
+  float: left;
+}
+
+.text-15{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 7px;
+  margin-top: 18px;
+  float: left;
+}
+
+.text-16{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 27px;
+  margin-top: 18px;
+  float: left;
+}
+
+.text-17{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 27px;
+  margin-top: 18px;
+  float: left;
+}
+
+.text-18{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 28px;
+  margin-top: 18px;
+  float: left;
+}
+
+.text-19{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 26px;
+  margin-top: 18px;
+  float: left;
+}
+
+.text-20{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 26px;
+  margin-top: 18px;
+  float: left;
+}
+
+.text-21{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 24px;
+  margin-top: 18px;
+  float: left;
+}
+
+.text-22{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 5px;
+  margin-top: 18px;
+  float: left;
+}
+
+.text-23{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 23px;
+  margin-top: 18px;
+  float: left;
+}
+
+.text-24{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 24px;
+  margin-top: 18px;
+  float: left;
+}
+
+.text-25{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 24px;
+  margin-top: 18px;
+  float: left;
+}
+
+.text-26{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 24px;
+  margin-top: 18px;
+  float: left;
+}
+
+.text-27{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 24px;
+  margin-top: 18px;
+  float: left;
+}
+
+.text-28{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 25px;
+  margin-top: 18px;
+  float: left;
+}
+
+.text-29{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 4px;
+  margin-top: 18px;
+  float: left;
+}
+
+.text-30{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 24px;
+  margin-top: 18px;
+  float: left;
+}
+
+.hor-break-line{
+  width: 442px;
+  border: 1px solid #000000;
+  float: left;
+}
+
+.date-time-text{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 24px;
+}
+
+/* Appointment bookings */
+.appointment-container{
+  width: 751px;
+  height: 270px;
+  overflow-x: auto;
+  background-color: #2F3542;
+  float: left;
+}
+
+.appoint-card-container{
+  width: 191px;
+  height: 250px;
+  margin-left: 20px;
+  background-color: transparent;
+}
+
+.appoint-card-container-two{
+  width: 191px;
+  height: 250px;
+  margin-left: 300px;
+  margin-top: -260px;
+  background-color: transparent;
+  float: left;
+}
+
+.appoint-card-container-three{
+  width: 191px;
+  height: 250px;
+  margin-top: -260px;
+  margin-left: 600px;
+  background-color: transparent;
+  float: left;
+}
+
+.appoint-card-container-four{
+  width: 191px;
+  height: 250px;
+  margin-top: -260px;
+  margin-left: 900px;
+  background-color: transparent;
+  float: left;
+}
+
+.appoint-card-container-five{
+  width: 191px;
+  height: 250px;
+  margin-top: -260px;
+  margin-left: 1200px;
+  background-color: transparent;
+  float: left;
+}
+
+.appoint-card-container-six{
+  width: 191px;
+  height: 250px;
+  margin-top: -260px;
+  margin-left: 1500px;
+  background-color: transparent;
+  float: left;
+}
+
+.profile-img{
+  width: 191px;
+  height: 191px;
+  border-radius: 360px;
+  margin-top: -250px;
+  background-image: url("../src/Assets/image\ 1.jpg");
+  background-repeat: no-repeat;
+  background-position: -85px;
+  background-size: cover;
+  float: left;
+}
+
+.profile-img-two{
+  width: 191px;
+  height: 191px;
+  margin-top: -250px;
+  border-radius: 360px;
+  background-image: url("../src/Assets/image\ 1.jpg");
+  background-repeat: no-repeat;
+  background-position: -85px;
+  background-size: cover;
+  float: left;
+}
+
+.text-info-box-two{
+  width: 191px;
+  height: 161px;
+  margin-top: 100px;
+  border-radius: 0px 0px 14px 14px;
+  background-color: white;
+  float: left;
+}
+
+.text-info-box{
+  width: 191px;
+  height: 161px;
+  margin-top: 100px;
+  border-radius: 0px 0px 14px 14px;
+  background-color: white;
+  float: left;
+}
+
+.time{
+  font-family: Inter;
+  font-weight: 300;
+  font-size: 15px;
+  margin-left: 39.5px;
+  margin-top: 102px;
+  color: black;
+  float: left;
+  
+}
+
+.date{
+  font-family: Inter;
+  font-weight: 300;
+  font-size: 15px;
+  margin-left: 18px;
+  margin-top: 102px;
+  color: black;
+  float: left;
+}
+
+.doctor{
+  font-family: Inter;
+  font-weight: 300;
+  font-size: 15px;
+  margin-left: 9px;
+  margin-top: 11px;
+  color: black;
+  float: left;
+}
+
+.room{
+  font-family: Inter;
+  font-weight: 300;
+  font-size: 15px;
+  margin-left: 55px;
+  margin-top: 11px;
+  color: black;
+  float: left;
+}
+
+/* Patients Page */
+.patients-detail-container{
+  width: 1440px;
+  height: 98px;
+  background-color: #636E72;
+  float: left;
+}
+/* 
+.row_item{
+  width: 85%;
+  margin: 0 auto;
+  float: left;
+  height: 55px;
+  margin-bottom: 25px;
+  background-color: #ffffff;
+  padding-left: 15px;
+  margin-left: 5%;
+  border-radius: 5px;
+  box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.18);
+-webkit-box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.18);
+-moz-box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.18);
+}
+.row_item p{
+ float: left;
+ margin-right: 15px;
+} */
+
+.patients-detail-container-two{
+  width: 1440px;
+  height: 98px;
+  margin-top: 44px;
+  background-color: #636E72;
+  float: left;
+}
+
+.p-name{
+  font-family: 'Inter';
+  margin-top: 3px;
+  font-weight: 400;
+  font-size: 11px;
+  text-align: center;
+}
+
+.patients-detail-container-three{
+  width: 1440px;
+  height: 98px;
+  margin-top: 44px;
+  background-color: #636E72;
+  float: left;
+}
+
+.patients-detail-container-four{
+  width: 1440px;
+  height: 98px;
+  margin-top: 44px;
+  background-color: #636E72;
+  float: left;
+}
+
+.patients-detail-container-five{
+  width: 1440px;
+  height: 98px;
+  margin-top: 44px;
+  background-color: #636E72;
+  float: left;
+}
+
+.patient-profile-img{
+  width: 99px;
+  height: 99px;
+  margin-left: 28px;
+  border-radius: 360px;
+  background-color: #353840;
+  float: left;
+}
+
+.patient-name-box{
+  width: 228px;
+  height: 39px;
+  margin-left: 24px;
+  margin-top: 29px;
+  background-color: #353840;
+  float: left;
+}
+
+.patient-surname-box{
+  width: 228px;
+  height: 39px;
+  margin-left: 80px;
+  margin-top: 29px;
+  background-color: #353840;
+  float: left;
+}
+
+.patient-email-box{
+  width: 228px;
+  height: 39px;
+  margin-left: 80px;
+  margin-top: 29px;
+  background-color: #353840;
+  float: left;
+}
+
+.patient-phoneNum-box{
+  width: 228px;
+  height: 39px;
+  margin-left: 80px;
+  margin-top: 29px;
+  background-color: #353840;
+  float: left;
+}
+
+.delete-patient-btn{
+  width: 34px;
+  height: 34px;
+  border-radius: 360px;
+  margin-top: 31px;
+  margin-left: 53px;
+  background-color: #353840;
+  float: left;
+}
+
+
+/* Doctor Page */
+.doctors-detail-container{
+  width: 1440px;
+  height: 98px;
+  background-color: #636E72;
+  float: left;
+}
+
+.doctors-detail-container-two{
+  width: 1440px;
+  height: 98px;
+  margin-top: 44px;
+  background-color: #636E72;
+  float: left;
+}
+
+.doctors-detail-container-three{
+  width: 1440px;
+  height: 98px;
+  margin-top: 44px;
+  background-color: #636E72;
+  float: left;
+}
+
+.doctors-detail-container-four{
+  width: 1440px;
+  height: 98px;
+  margin-top: 44px;
+  background-color: #636E72;
+  float: left;
+}
+
+.doctors-detail-container-five{
+  width: 1440px;
+  height: 98px;
+  margin-top: 44px;
+  background-color: #636E72;
+  float: left;
+}
+
+.doctor-profile-img{
+  width: 99px;
+  height: 99px;
+  margin-left: 28px;
+  border-radius: 360px;
+  background-color: #353840;
+  float: left;
+}
+
+.doctor-name-box{
+  width: 228px;
+  height: 39px;
+  margin-left: 24px;
+  margin-top: 29px;
+  background-color: #353840;
+  float: left;
+}
+
+.doctor-surname-box{
+  width: 228px;
+  height: 39px;
+  margin-left: 80px;
+  margin-top: 29px;
+  background-color: #353840;
+  float: left;
+}
+
+.doctor-email-box{
+  width: 228px;
+  height: 39px;
+  margin-left: 80px;
+  margin-top: 29px;
+  background-color: #353840;
+  float: left;
+}
+
+.doctor-phoneNum-box{
+  width: 228px;
+  height: 39px;
+  margin-left: 80px;
+  margin-top: 29px;
+  background-color: #353840;
+  float: left;
+}
+
+.delete-doctor-btn{
+  width: 34px;
+  height: 34px;
+  border-radius: 360px;
+  margin-top: 31px;
+  margin-left: 53px;
+  background-color: #353840;
+  float: left;
+}
+/* New Patients */
+.vert-nav-bar{
+  width: 224px;
+  height: 100vh;
+  margin-left: 10px;
+  background: #A4B0BE;
+  border-radius: 45px 0px 0px 45px;
+  float: left;
+}
+
+.patients-logo-box{
+  width: 72px;
+  height: 67px;
+  margin-top: 40px;
+  margin-left: 73px;
+  background-image: url('../src/Assets/Logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: left;
+}
+
+.patients-logo-box:hover{
+  width: 72px;
+  height: 67px;
+  margin-top: 40px;
+  margin-left: 73px;
+  background-image: url('../src/Assets/Logo\ Hover.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: left;
+}
+
+.patients-cerebrosano{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 11px;
+  margin-left: 59px;
+  float: left;
+}
+
+.dashboard-nav-container{
+  width: 197px;
+  height: 54px;
+  margin-left: 17.4px;
+  margin-top: 13px;
+  /* background: rgba(79, 80, 173, 0.3); */
+  border-radius: 33px;
+  float: left;
+}
+
+.dashboard-nav-icon{
+  width: 30px;
+  height: 30px;
+  background-image: url('../src/Assets/Dash\ Icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background: #D9D9D9; */
+  margin-top: 14px;
+  margin-left: 17.6px;
+  float: left;
+}
+
+.dashboard-nav-text{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 21px;
+  margin-left: 14px;
+  margin-top: 15px;
+  float: left;
+}
+
+.patients-nav-container{
+  width: 197px;
+  height: 54px;
+  margin-left: 13px;
+  margin-top: 14px;
+  /* background: rgba(79, 80, 173, 0.3); */
+  background-color: #2F3542;
+  border-radius: 33px;
+  float: left;
+}
+
+/* 
+.patients-nav-container {
+  width: 200px;
+  height: 40px;
+  position: relative;
+  background: white;
+  border-radius: 20px 0 0 20px;
+}
+
+.patients-nav-container span {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  background: white;
+}
+
+.patients-nav-container span:nth-child( 1 ) {
+  bottom: 100%;
+}
+
+.patients-nav-container span:nth-child( 2 ) {
+  top: 100%;
+}
+
+.patients-nav-container span::before {
+  content: '';
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  right: 0;
+  background: blue;
+  border-radius: 50%;
+}
+
+.patients-nav-container span:nth-child( 1 )::before {
+  bottom: 0;
+} */
+
+.patients-nav-icon{
+  width: 30px;
+  height: 30px;
+  background-image: url('../src/Assets/Patients\ Icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background: #D9D9D9; */
+  margin-top: 12px;
+  margin-left: 20px;
+  float: left;
+}
+
+.patients-nav-text{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 21px;
+  color: white;
+  margin-left: 14px;
+  margin-top: 15px;
+  float: left;
+}
+
+.doctors-nav-container{
+  width: 197px;
+  height: 54px;
+  margin-left: 17.4px;
+  margin-top: 14px;
+  /* background: rgba(79, 80, 173, 0.3); */
+  border-radius: 33px;
+  float: left;
+}
+
+.doctors-nav-icon{
+  width: 30px;
+  height: 30px;
+  /* background: #D9D9D9; */
+  background-image: url('../src/Assets/Doc\ Icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 14px;
+  margin-left: 17.6px;
+  float: left;
+}
+
+.doctors-nav-text{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 21px;
+  margin-left: 14px;
+  margin-top: 15px;
+  float: left;
+}
+
+.signin-nav-container{
+  width: 197px;
+  height: 54px;
+  margin-left: 17.4px;
+  margin-top: 14px;
+  /* background: rgba(79, 80, 173, 0.3); */
+  border-radius: 33px;
+  float: left;
+}
+
+.signin-nav-icon{
+  width: 30px;
+  height: 30px;
+  background-image: url('../src/Assets/Sign\ Icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 14px;
+  margin-left: 17.6px;
+  float: left;
+}
+
+.signin-nav-text{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 21px;
+  margin-left: 14px;
+  margin-top: 15px;
+  float: left;
+}
+
+.register-nav-container{
+  width: 197px;
+  height: 54px;
+  margin-left: 17.4px;
+  margin-top: 14px;
+  /* background: rgba(79, 80, 173, 0.3); */
+  border-radius: 33px;
+  float: left;
+}
+
+.register-nav-icon{
+  width: 30px;
+  height: 30px;
+  background-image: url('../src/Assets/Register\ Icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 14px;
+  margin-left: 17.6px;
+  float: left;
+}
+
+.register-nav-text{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 21px;
+  margin-left: 14px;
+  margin-top: 15px;
+  float: left;
+}
+
+
+/* Start of patients details */
+.patients-detail-container{
+  width: 900px;
+  height: 745px;
+  background: rgba(217, 217, 217, 0.2);
+  /* background-color: transparent; */
+  margin-top: 20px;
+  margin-left: 28px;
+  float: left;
+}
+
+.patients-header{
+  width: 900px;
+  height: 25px;
+  margin-top: 183px;
+  border-radius: 8px;
+  background: #A4B0BE;
+  float: left;
+}
+
+.name-label{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 11px;
+  margin-left: 130px;
+  margin-top: 6px;
+  float: left;
+}
+
+.surname-label{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 11px;
+  margin-left: 171px;
+  margin-top: 6px;
+  float: left;
+}
+
+.email-label{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 11px;
+  margin-left: 173px;
+  margin-top: 6px;
+  float: left;
+}
+
+.phone-number-label{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 11px;
+  margin-left: 157px;
+  margin-top: 6px;
+  float: left;
+}
+
+/* Patients details */
+.patients-container-overflow{
+  width: 900px;
+  height: 530px;
+  overflow-x: auto;
+  margin-top: 21px;
+  /* background: rgba(67, 113, 243, 0.3); */
+  background: transparent;
+  float: left;
+}
+
+.patients-detail-container-one{
+  width: 900px;
+  height: 60px;
+  background: #8595A8;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-profile-one{
+  width: 50px;
+  height: 50px;
+  margin-left: 14px;
+  margin-top: 5px;
+  border: 1px solid #000000;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-name-one{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 11.51px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-surname-one{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-email-one{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-phone-number-one{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-remove-btn-one{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-remove-btn-one:hover{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon\ Hovered.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
+/* Patient Two */
+.patients-detail-container-two{
+  width: 900px;
+  height: 60px;
+  margin-top: 18px;
+  background: #8595A8;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-profile-two{
+  width: 50px;
+  height: 50px;
+  margin-left: 14px;
+  margin-top: 5px;
+  border: 1px solid #000000;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-name-two{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 11.51px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-surname-two{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-email-two{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-phone-number-two{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-remove-btn-two{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-remove-btn-two:hover{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon\ Hovered.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
+/*  Patient Three*/
+.patients-detail-container-three{
+  width: 900px;
+  height: 60px;
+  margin-top: 18px;
+  background: #8595A8;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-profile-three{
+  width: 50px;
+  height: 50px;
+  margin-left: 14px;
+  margin-top: 5px;
+  border: 1px solid #000000;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-name-three{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 11.51px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-surname-three{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-email-three{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-phone-number-three{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-remove-btn-three{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-remove-btn-three:hover{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon\ Hovered.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
+/* Patients Four */
+.patients-detail-container-four{
+  width: 900px;
+  height: 60px;
+  margin-top: 18px;
+  background: #8595A8;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-profile-four{
+  width: 50px;
+  height: 50px;
+  margin-left: 14px;
+  margin-top: 5px;
+  border: 1px solid #000000;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-name-four{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 11.51px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-surname-four{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-email-four{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-phone-number-four{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-remove-btn-four{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-remove-btn-four:hover{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon\ Hovered.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
+/* Patient Five */
+.patients-detail-container-five{
+  width: 900px;
+  height: 60px;
+  margin-top: 18px;
+  background: #8595A8;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-profile-five{
+  width: 50px;
+  height: 50px;
+  margin-left: 14px;
+  margin-top: 5px;
+  border: 1px solid #000000;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-name-five{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 11.51px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-surname-five{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-email-five{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-phone-number-five{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-remove-btn-five{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-remove-btn-five:hover{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon\ Hovered.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
+/* Patient Six */
+.patients-detail-container-six{
+  width: 900px;
+  height: 60px;
+  margin-top: 18px;
+  background: #8595A8;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-profile-six{
+  width: 50px;
+  height: 50px;
+  margin-left: 14px;
+  margin-top: 5px;
+  border: 1px solid #000000;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-name-six{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 11.51px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-surname-six{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-email-six{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-phone-number-six{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-remove-btn-six{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-remove-btn-six:hover{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon\ Hovered.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
+/* Patient Seven */
+.patients-detail-container-seven{
+  width: 900px;
+  height: 60px;
+  margin-top: 18px;
+  background: #8595A8;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-profile-seven{
+  width: 50px;
+  height: 50px;
+  margin-left: 14px;
+  margin-top: 5px;
+  border: 1px solid #000000;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-name-seven{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 11.51px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-surname-seven{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-email-seven{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-phone-number-seven{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-remove-btn-seven{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-remove-btn-seven:hover{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon\ Hovered.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
+
+/* Patient Eight */
+.patients-detail-container-eight{
+  width: 900px;
+  height: 60px;
+  margin-top: 18px;
+  background: #8595A8;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-profile-eight{
+  width: 50px;
+  height: 50px;
+  margin-left: 14px;
+  margin-top: 5px;
+  border: 1px solid #000000;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-name-eight{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 11.51px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-surname-eight{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-email-eight{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-phone-number-eight{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-remove-btn-eight{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-remove-btn-eight:hover{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon\ Hovered.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
+
+/* Patient Nine */
+.patients-detail-container-nine{
+  width: 900px;
+  height: 60px;
+  margin-top: 18px;
+  background: #8595A8;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-profile-nine{
+  width: 50px;
+  height: 50px;
+  margin-left: 14px;
+  margin-top: 5px;
+  border: 1px solid #000000;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-name-nine{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 11.51px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-surname-nine{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-email-nine{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-phone-number-nine{
+  width: 140px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  float: left;
+}
+
+.patients-remove-btn-nine{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
+.patients-remove-btn-nine:hover{
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-left: 23px;
+  background-image: url("../src/Assets/X\ Icon\ Hovered.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 360px;
+  float: left;
+}
+
+
+/* Patients Edit Container */
+.edit-patients-detail-container{
+  width: 234px;
+  height: 100vh;
+  margin-left: 30px;
+  background: #A4B0BE;
+  border-radius: 0px 45px 45px 0px;
+  float: left;
+}
+
+.edit-patients-profile{
+  width: 151px;
+  height: 151px;
+  margin-top: 73px;
+  margin-left: 37px;
+  border-radius: 360px;
+  background: #FFFFFF;
+  float: left;
+}
+
+.edit-patients-name{
+  width: 91px;
+  height: 26px;
+  margin-top: 55.58px;
+  margin-left: 16px;
+  background: #FFFFFF;
+  border-radius: 9px;
+  float: left;
+}
+
+.edit-patients-surname{
+  width: 91px;
+  height: 26px;
+  margin-top: 55.58px;
+  margin-left: 9.26px;
+  background: #FFFFFF;
+  border-radius: 9px;
+  float: left;
+}
+
+.edit-patients-age{
+  width: 91px;
+  height: 26px;
+  margin-top: 38.41px;
+  margin-left: 16px;
+  background: #FFFFFF;
+  border-radius: 9px;
+  float: left;
+}
+
+.edit-patients-gender{
+  width: 91px;
+  height: 26px;
+  margin-top: 38.41px;
+  margin-left: 9.26px;
+  background: #FFFFFF;
+  border-radius: 9px;
+  float: left;
+}
+
+.edit-patients-email{
+  width: 191px;
+  height: 26px;
+  margin-top: 38.41px;
+  margin-left: 17px;
+  background: #FFFFFF;
+  border-radius: 9px;
+  float: left;
+}
+
+.edit-patients-phone-number{
+  width: 191px;
+  height: 26px;
+  margin-top: 38.41px;
+  margin-left: 17px;
+  background: #FFFFFF;
+  border-radius: 9px;
+  float: left;
+}
+
+.edit-patients-id{
+  width: 191px;
+  height: 26px;
+  margin-top: 38.41px;
+  margin-left: 17px;
+  background: #FFFFFF;
+  border-radius: 9px;
+  float: left;
+}
+
+.edit-patients-medical-aid-number{
+  width: 191px;
+  height: 26px;
+  margin-top: 38.41px;
+  margin-left: 17px;
+  background: #FFFFFF;
+  border-radius: 9px;
+  float: left;
+}
+
+.update-btn{
+  width: 133px;
+  height: 27px;
+  margin-top: 54px;
+  margin-left: 46px;
+  background: #FFFFFF;
+  border-radius: 9px;
+  float: left;
+}
+
+.new-appoint-container{
+  width: 444px;
+  height: 100vh;
+  margin-left: 985px;
+  margin-top: -100vh;
+  background: #A4B0BE;
+  border-radius: 0px 42px 42px 0px;
+  float: left;
+}
+
+.welcome-container{
+  width: 698px;
+  height: 174px;
+  margin-top: 100px;
+  margin-left: 25px;
+  background: #C9D1DB;
+  border-radius: 24px;
+  float: left;
+}
+
+.welcome-text{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 32px;
+  margin-top: 50px;
+  margin-left: 50px;
+  float: left;
+}
+
+.secondary-welcome-text{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 25px;
+  margin-top: 21px;
+  margin-left: 50px;
+  float: left;
+}
+
+.alertMiniModalRightContact {
+  width: 200px;
+  height: 25px;
+  margin-top: 385px;
+  margin-left: 500px;
+  background-color: #324A5E;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  position: absolute;
+  padding-top: 10px;
+  box-shadow: 10px 10px 5px -7px rgb(0 0 0 / 18%);
+  -webkit-box-shadow: 10px 10px 5px -7px rgb(0 0 0 / 18%);
+  -moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.18);
+}
+
+.alertMiniModalRightContact p{
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.alertMiniModalRightContact img{
+  width: 13px;
+  height: 35px;
+  top: 0px;
+  left: -12px;
+  position: absolute;
+  transform: rotate(180deg);
+}
+
+
+.alertMiniModalRightEmail {
+  width: 200px;
+  height: 25px;
+  margin-top: 550px;
+  margin-left: 500px;
+  background-color: #324A5E;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  position: absolute;
+  padding-top: 10px;
+  box-shadow: 10px 10px 5px -7px rgb(0 0 0 / 18%);
+  -webkit-box-shadow: 10px 10px 5px -7px rgb(0 0 0 / 18%);
+  -moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.18);
+}
+
+.alertMiniModalRightEmail p{
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.alertMiniModalRightEmail img{
+  width: 13px;
+  height: 35px;
+  top: 0px;
+  left: -12px;
+  position: absolute;
+  transform: rotate(180deg);
+}
+
+.statusIcon{
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  right: 30px;
+  margin-top: 6px;
+  border-radius: 5px;
+}
+
+.statusIconUser{
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 38%;
+  border-radius: 5px;
+}
