@@ -256,7 +256,7 @@ const handleSubmit = (e) => {
                     <p className="password-text-reg">Password</p>
                     <input className='password-input-reg' name="password" type={'password'} placeholder={"Enter Your Password"} onChange={passwordVal}></input>
                     <p className="password-text-reg">ConPassword</p>
-                    <input className='password-input-reg' name="Conpass" type={'password'} placeholder={"Enter Your Password"} onChange={passwordConVal}></input> 
+                    <input className='password-input-reg' name="Conpass" type={'password'} placeholder={"Confirm Your Password"} onChange={passwordConVal}></input> 
                     </form>
 
                     <div className='btn-container' onClick={handleSubmit}>

@@ -1,5 +1,5 @@
 import React from 'react'
-import ErrorAsset from '../Assets/errors.svg';
+import ErrorAsset from '../Assets/error.svg';
 
 const MiniModalRight = (props) => {
   return (
