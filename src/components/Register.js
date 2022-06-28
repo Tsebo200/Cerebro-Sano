@@ -2,9 +2,20 @@ import React from "react";
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import MiniModalLeftFirName from "./MiniModalLeftFirName";
+import MiniModalRightSurName from "./MiniModalRightSurName";
+import MiniModalLeftAge from "./MiniModalLeftAge";
+import MiniModalRightGender from "./MiniModalRightGender";
 import MiniModalRightContact from "./MiniModalRightContact";
-import MiniModalRight from "./MiniModalRight";
+import MiniModalRightRank from "./MiniModalRightRank";
 import MiniModalRightEmail from "./MiniModalRightEmail";
+import MiniModalRightPass from "./MiniModalRightPass";
+import MiniModalRightConPass from "./MiniModalRightConPass";
+import MiniModalRightPassEmpty from "./MiniModalRightPassEmpty";
+
+
+
+
 import Okay from '../Assets/okay.svg';
 import NotOkay from '../Assets/notOkay.svg';
 
@@ -25,7 +36,8 @@ const Register = () => {
 //   };
 
 const navigate = useNavigate();
-
+const locate = useNavigate();
+ 
 const [inputs, setInputs] = useState({
     first: '',
     surname: '',
@@ -33,6 +45,7 @@ const [inputs, setInputs] = useState({
     gender: '',
     email: '',
     password: '',
+    passwordCon: '',
     contact: '',
     rank: '',
 });
@@ -45,7 +58,6 @@ const [genderError, setGenderError] = useState();
 const [rankError, setRankError] = useState();
 const [contactError, setContactError] = useState();
 const [passwordError, setPasswordError] = useState();
-const [usernameError, setUsernameError] = useState();
 const [passwordConError, setPasswordConError] = useState();
 
 const [emailAvail, setEmailAvail] = useState();
@@ -90,7 +102,7 @@ const emailVal = (e) => {
     const value = e.target.value;
     setInputs({...inputs, email: value});
     if(inputs.email !== ''){setEmailError();}
-    if(value.match(mailRegex)){
+    if(!value.match(mailRegex)){
         setEmailError(<MiniModalRightEmail message="Email is not a valid format..." />);
     }
 }
@@ -119,7 +131,7 @@ const contactVal = (e) => {
     const value = e.target.value;
     setInputs({...inputs, contact: value});
     if(inputs.contact !== ''){setContactError();}
-    if(value.match(contactRegex)){
+    if(!value.match(contactRegex)){
         setContactError(<MiniModalRightContact message="This is not a phone number..." />);
     }
 }
@@ -130,8 +142,8 @@ const passwordVal = (e) => {
     const value = e.target.value;
     setInputs({...inputs, password: value});
     if(inputs.password !== ''){setPasswordError();}
-    if(value.match(passwordRegex)){
-        setPasswordError(<MiniModalRight message="Password must include X, Y and Z..." />);
+    if(!value.match(passwordRegex)){
+        setPasswordError(<MiniModalRightPass message="Password must include Capital Letter, Symbol (!@#$%...) & A Digit" />);
     }
 }
 
@@ -141,7 +153,7 @@ const passwordConVal = (e) => {
     if(inputs.password === value){
         setPasswordConError();
     } else{
-        setPasswordConError(<MiniModalRight message="Your password does not match"/>);
+        setPasswordConError(<MiniModalRightConPass message="Your password does not match"/>);
     }
 }
 
@@ -149,55 +161,55 @@ const handleSubmit = (e) => {
     e.preventDefault();
     console.log(inputs)
     if(inputs.first === ''){
-        setFirstError(<MiniModalRight message="What's Your Name"/>);
+        setFirstError(<MiniModalLeftFirName message="What's Your Name"/>);
     } else {
         setFirstError();
     }
 
     if(inputs.surname === ''){
-        setLastError(<MiniModalRight message="What's Your Surname"/>);
+        setLastError(<MiniModalRightSurName message="What's Your Surname"/>);
     } else {
         setLastError();
     }
 
     if(inputs.age === ''){
-        setLastError(<MiniModalRight message="How Old Are You?"/>);
+        setAgeError(<MiniModalLeftAge message="How Old Are You"/>);
     } else {
-        setLastError();
+        setAgeError();
     }
 
     if(inputs.gender=== ''){
-        setLastError(<MiniModalRight message="What's Is Your Gender"/>);
+        setGenderError(<MiniModalRightGender message="What's Your Gender"/>);
     } else {
-        setLastError();
+        setGenderError();
     }
 
     if(inputs.rank === ''){
-        setLastError(<MiniModalRight message="What's Your Rank"/>);
+        setRankError(<MiniModalRightRank message="Please Provide Your Rank"/>);
     } else {
-        setLastError();
+        setRankError();
     }
 
     if(inputs.email === ''){
-        setEmailError(<MiniModalRight message="Please provide your email"/>);
+        setEmailError(<MiniModalRightEmail message="Please Provide Your Email"/>);
     } else {
         setEmailError();
     }
 
     if(inputs.contact === ''){
-        setContactError(<MiniModalRightContact message="Please provide your contact details"/>);
+        setContactError(<MiniModalRightContact message="Please Provide Your Numbers"/>);
     } else {
         setContactError();
     }
 
     if(inputs.password === ''){
-        setPasswordError(<MiniModalRight message="Please provide your password"/>);
+        setPasswordError(<MiniModalRightPassEmpty message="Please Provide Your Password"/>);
     } else {
         setPasswordError();
     }
 
     if(inputs.passwordCon === ''){
-        setPasswordConError(<MiniModalRight message="Please confirm your password"/>);
+        setPasswordConError(<MiniModalRightConPass message="Passwords Do Not Match"/>);
     } else {
         setPasswordConError();
     }
@@ -219,7 +231,7 @@ const handleSubmit = (e) => {
         });
     }
 }
-
+locate("/login");
     return(
         <>
         <div className="main-container">
@@ -229,7 +241,7 @@ const handleSubmit = (e) => {
                     <div className="sign-logo-reg"></div>
                     <p className='cerebro-sano-reg'>Cerebro Sano</p>
                     <p className="create-account-text">Create An Account</p>
-                    <p className="already-member-text">Already A member?</p><p className="signin-text-reg">Sign in</p>
+                    <p className="already-member-text">Already a member?</p><p className="signin-text-reg" onClick={locate}>Sign in</p>
                     <p className="first-name-text">First Name</p>
 
                     <form>
@@ -256,10 +268,10 @@ const handleSubmit = (e) => {
                     {passwordError}
                     <p className="password-text-reg">Password</p>
                     <input className='password-input-reg' name="password" type={'password'} placeholder={"Enter Your Password"} onChange={passwordVal}></input>
-                    <p className="password-text-reg">ConPassword</p>
-                    <input className='password-input-reg' name="Conpass" type={'password'} placeholder={"Confirm Your Password"} onChange={passwordConVal}></input> 
+                    {passwordConError}
+                    <p className="password-text-reg">Confirm Password</p>
+                    <input className='password-input-reg' name="passwordCon" type={'password'} placeholder={"Confirm Your Password"} onChange={passwordConVal}></input> 
                     </form>
-
                     <div className='btn-container' onClick={handleSubmit}>
                     <p className='register-btn'>Create Account</p>
                     </div>
