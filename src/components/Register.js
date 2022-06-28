@@ -231,7 +231,7 @@ const handleSubmit = (e) => {
         });
     }
 }
-locate("/login");
+locate("/");
     return(
         <>
         <div className="main-container">
