@@ -5,14 +5,40 @@ import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
     const locate = useNavigate();
-    const [inputs, setInputs] = useState({});
+    const [inputs, setInputs] = useState({
+        email: '',
+        password: '',
+    });
 
-    const handleChange = (event) => {
-        const name = event.target.name;
-        const value = event.target.value;
-        setInputs(values => ({...values, [name]: value}));
+    const emailVal = (e) => {
+    const value = e.target.value;
+    setInputs({...inputs, email: value});
     }
-    locate("/register");
+
+    const passwordVal = (e) => {
+        const value  = e.target.value;
+        setInputs({...inputs, password: value});
+    }
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+    console.log(inputs);
+
+    axios.post('http://localhost:8888/mainProject/userLogin.php', inputs)
+    .then(function(res){
+    console.log(res);
+
+    if(res.data === true){
+        sessionStorage.setItem('activeUser', inputs.email);
+        locate("/Dashboard");
+    } else {
+        console.log("Not Working");
+        //Log an Error or some type of message ("Email and Password not valid")
+   }
+    });
+}
+
+    // locate("/register");
     return(
         <>
         <div className='main-container'>
@@ -23,22 +49,22 @@ const SignIn = () => {
                 <p className='login-text'>Log in</p>
                 <p className='welcome-login-text'>Welcome back! Please enter your details.</p>
                 <p className='email-text'>Email</p>
-                <form><input className='email-input' type={'email'} placeholder={"Enter Your Email"}></input></form>
+                <form><input className='email-input' type={'email'} placeholder={"Enter Your Email"}onChange={emailVal}></input></form>
                 <p className='password-text'>Password</p>
-                <form><input className='password-input' type={'password'} placeholder={"Enter Your Password"}></input></form>
+                <form><input className='password-input' type={'password'} placeholder={"Enter Your Password"} onChange={passwordVal}></input></form>
                 <form><input className='check-box' type={'checkbox'}></input><label>Remember for 30 days</label></form>
                 <p className='forgot-password-text'>forgot password?</p>
-                <div className='btn-container'>
+                <div className='btn-container' onClick={handleSubmit}>
                     <p className='signIn-btn'>Sign in</p>
                 </div>
                 <div className='SignIn-Google-btn'><p className='Sign-Google-text'>Sign In with Google</p></div>
-                <p className='no-account-text'>Don't have an account?</p><p className='signin-text' onClick={locate}>Sign up</p>
+                <p className='no-account-text'>Don't have an account?</p><p className='signin-text' /*onClick={locate}*/>Sign up</p>
             </div>
             <div className='right'></div>
         </div>
         </div>        
         </>
-    );
+    )
 }
 
 export default SignIn

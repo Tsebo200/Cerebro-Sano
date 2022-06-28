@@ -39,6 +39,7 @@ const Patient = () => {
                     <p className='surname-label'>Surname</p>
                     <p className='email-label'>Email</p>
                     <p className='phone-number-label'>Phone Number</p>
+                    <div className='add-patient-btn'></div>
                 </div>
                 <div className='patients-container-overflow'>
                 <div className='patients-detail-container-one'>

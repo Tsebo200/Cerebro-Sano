@@ -1879,6 +1879,24 @@ label{
   float: left;
 }
 
+.add-patient-btn{
+  width: 17px;
+  height: 17px;
+  margin-top: 4px;
+  margin-left: 58px;
+  background-image: url('../src/Assets/Add.svg');
+  float: left;
+}
+
+.add-patient-btn:hover{
+  width: 17px;
+  height: 17px;
+  margin-top: 4px;
+  margin-left: 58px;
+  background-image: url('../src/Assets/Add\ Hover.svg');
+  float: left;
+}
+
 /* Patients details */
 .patients-container-overflow{
   width: 900px;

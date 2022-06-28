@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import MiniModalLeftFirName from "./MiniModalLeftFirName";
 import MiniModalRightSurName from "./MiniModalRightSurName";
@@ -21,23 +21,11 @@ import NotOkay from '../Assets/notOkay.svg';
 
 const Register = () => {
 
-//     const [inputs, setInputs] = useState({});
-
-//     const handleChange = (event) => {
-//         const name = event.target.name;
-//         const value = event.target.value;
-//         setInputs(values => ({...values, [name]: value}));
-//     }
-
-//     const handleSubmit = (event) => {
-//     event.preventDefault();
-//     console.log(inputs);
-
-//   };
 
 const navigate = useNavigate();
-const locate = useNavigate();
- 
+// const locate = useNavigate();
+
+// locate("/");
 const [inputs, setInputs] = useState({
     first: '',
     surname: '',
@@ -216,22 +204,25 @@ const handleSubmit = (e) => {
 
     let result = Object.values(inputs).some(o => o === '');
     if(result){
-        console.log("There is an Error")
+        console.log("There is an Error");
     } else {
         axios.post('http://localhost:8888/api/addUser.php', inputs)
         .then(function(res){
             console.log(res);
 
             if(res.data === "Error"){
-                navigate("/register");
-            } else if(res.status === 200){
                 navigate("/");
+            } else if(res.status === 200){
+                navigate("/Dashboard");
 
             }
         });
     }
 }
-locate("/");
+
+
+    
+
     return(
         <>
         <div className="main-container">
@@ -241,7 +232,7 @@ locate("/");
                     <div className="sign-logo-reg"></div>
                     <p className='cerebro-sano-reg'>Cerebro Sano</p>
                     <p className="create-account-text">Create An Account</p>
-                    <p className="already-member-text">Already a member?</p><p className="signin-text-reg" onClick={locate}>Sign in</p>
+                    <p className="already-member-text">Already a member?</p><p className="signin-text-reg" /*onClick={locate}*/>Sign in</p>
                     <p className="first-name-text">First Name</p>
 
                     <form>
