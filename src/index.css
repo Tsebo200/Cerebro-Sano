@@ -271,6 +271,7 @@ label{
 }
 
 .signin-text{
+  cursor: pointer;
   font-size: 14px;
   font-family: Inter;
   font-weight: 300;
@@ -387,6 +388,7 @@ label{
 }
 
 .signin-text-reg{
+  cursor: pointer;
   margin-top: 13px;
   margin-left: 5px;
   font-family: Inter;

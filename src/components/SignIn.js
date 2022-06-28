@@ -1,9 +1,10 @@
 import React from 'react';
 import axios from 'axios';
 import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
-   
+    const locate = useNavigate();
     const [inputs, setInputs] = useState({});
 
     const handleChange = (event) => {
@@ -11,6 +12,7 @@ const SignIn = () => {
         const value = event.target.value;
         setInputs(values => ({...values, [name]: value}));
     }
+    locate("/register");
     return(
         <>
         <div className='main-container'>
@@ -30,7 +32,7 @@ const SignIn = () => {
                     <p className='signIn-btn'>Sign in</p>
                 </div>
                 <div className='SignIn-Google-btn'><p className='Sign-Google-text'>Sign In with Google</p></div>
-                <p className='no-account-text'>Don't have an account?</p><p className='signin-text'>Sign up</p>
+                <p className='no-account-text'>Don't have an account?</p><p className='signin-text' onClick={locate}>Sign up</p>
             </div>
             <div className='right'></div>
         </div>
