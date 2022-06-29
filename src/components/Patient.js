@@ -1,38 +1,99 @@
 import react from 'react';
 import axios from 'axios';
+import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import PostItem from './PostItem';
 
 const Patient = () => {
+    // const [nameOne, setNameOne] = useState('');
+    // const [inputs, setInputs] = useState({
+    //     first: '',
+    //     surname: '',
+    //     email: '',
+    //     contact: '',
+    // });
+   
+//     axios.get('http://localhost:8888/mainProject/readPatients.php', inputs)
+//     .then(function(res){
+//         console.log(res)
+//         let names = res.data;
+//         let nameOne = names.slice(0,6);
+//         let nameTwo = names.slice(6,9);
+//         let nameThree = names.slice(9,17);
+//         let nameFour = names.slice(17,22);
+//         console.log(nameOne);
+//         console.log(nameTwo);
+//         console.log(nameThree);
+//         console.log(nameFour);
+//         document.getElementById('nameOne').textContent = nameOne;
+        
+// });
+
+ 
+    const navigate = useNavigate();
+
+    const [userId, setUserId] = useState({
+        activeUser: sessionStorage.getItem('activeUser'),
+    });
+
+    const [posts, setPosts] = useState();
+    const [postMessage, setPostMessage] = useState({
+    message: '', 
+    user: sessionStorage.getItem('activeUser'),
+    });
+
+    const [renderPost, setRenderPost] = useState();
+
+    useEffect(()=>{
+    const userSession = sessionStorage.getItem('activeUser');
+    console.log(userSession);
+    if(userSession === '' || userSession === undefined){
+    navigate('/');
+    }
+    }, []);
+
+
+    useEffect(()=>{
+
+    axios.post('http://localhost:8888/mainProject/readUserPosts.php', userId)
+    .then((res)=>{
+        let data = res.data;
+        let renderPost = data.map((item) =>  <PostItem key={item.id} /*Change Rerender name to rerenderLevelOne*/rerender={setRenderPost} uniqueId={item.id} userpost={item.userpost} date={item.timestamp} message={item.message}  />);
+        console.log(data);
+        setPosts(renderPost);
+        setRenderPost(false);
+        
+    })
+    .catch(err=>{
+        console.log(err);
+    });
+
+    },[renderPost]);
+
+    const postVal = (e) => {
+    let messageVal = e.target.value;
+    setPostMessage({...postMessage, message: messageVal});
+    }
+
+    const addNewPost = (e) => {
+    e.preventDefault();
+    document.getElementById('textMes').value = "";
+    axios.post('http://localhost:8888/mainProject/addPost.php', postMessage)
+    .then((res)=>{
+        let data = res.data;
+        console.log(data); 
+        setRenderPost(true);
+    });
+    }
+
+    // const setLogout = () => {
+    // sessionStorage.setItem('activeUser','');
+    // navigate('/');
+    // }
 
     return(
         <>
         <div className='main-container'>
-            <div className='vert-nav-bar'>
-                <div className='patients-logo-box'></div>
-                <p className='patients-cerebrosano'>CerebroSano</p>
-                <div className='dashboard-nav-container'>
-                <div className='dashboard-nav-icon'></div>
-                <p className='dashboard-nav-text'>Dashboard</p>
-                </div>
-                <div className='patients-nav-container'>
-                {/* <span></span>
-                <span></span> */}
-                <div className='patients-nav-icon'></div>
-                <p className='patients-nav-text'>Patients</p>
-              
-                </div>
-                <div className='doctors-nav-container'>
-                <div className='doctors-nav-icon'></div>
-                <p className='doctors-nav-text'>Doctors</p>
-                </div>
-                <div className='signin-nav-container'>
-                <div className='signin-nav-icon'></div>
-                <p className='signin-nav-text'>Sign in</p>
-                </div>
-                <div className='register-nav-container'>
-                <div className='register-nav-icon'></div>
-                <p className='register-nav-text'>Register</p>
-                </div>
-            </div>
             <div className='patients-detail-container'>
                 <div className='patients-header'>
                     <p className='name-label'>Name</p>
@@ -45,6 +106,7 @@ const Patient = () => {
                 <div className='patients-detail-container-one'>
                     <div className='patients-profile-one'></div>
                     <div className='patients-name-one'>
+                <p id="nameOne"></p>
                     {/* <p className='p-name'></p> */}
                     </div>
                     <div className='patients-surname-one'></div>
@@ -118,9 +180,10 @@ const Patient = () => {
                 </div>
             </div>
             </div>
+
             <div className='edit-patients-detail-container'>
                 <div className='edit-patients-profile'></div>
-                <div className='edit-patients-name'></div>
+                <input className='edit-patients-name' onClick={postVal}></input>
                 <div className='edit-patients-surname'></div>
                 <div className='edit-patients-age'></div>
                 <div className='edit-patients-gender'></div>
@@ -128,7 +191,7 @@ const Patient = () => {
                 <div className='edit-patients-phone-number'></div>
                 <div className='edit-patients-id'></div>
                 <div className='edit-patients-medical-aid-number'></div>
-                <div className='update-btn'></div>
+                <div className='update-btn' onClick={addNewPost}></div>
             </div>
             
             {/* <a href="indipatient" onClick={Patient}>

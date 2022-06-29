@@ -97,7 +97,7 @@ const emailVal = (e) => {
 
 // Authentication
 const authenticateEmail = () => {
-    axios.post('http://localhost:8888/api/authenticateEmail.php', inputs)
+    axios.post('http://localhost:8888/mainProject/authenticateEmail.php', inputs)
     .then(function(res){
         console.log(res);
         if(res.data === "Available"){
@@ -206,7 +206,7 @@ const handleSubmit = (e) => {
     if(result){
         console.log("There is an Error");
     } else {
-        axios.post('http://localhost:8888/api/addUser.php', inputs)
+        axios.post('http://localhost:8888/mainProject/addUser.php', inputs)
         .then(function(res){
             console.log(res);
 

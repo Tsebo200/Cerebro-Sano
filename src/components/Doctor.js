@@ -9,8 +9,8 @@ const Doctor = () => {
            
         <div className='main-container'>
             <div className='doctors-detail-container'> 
-            <a href="indidoctor" onClick={Doctor}>
-             <div className='doctor-profile-img'></div></a>
+            {/* <a href="indidoctor" onClick={Doctor}> </a>*/}
+             <div className='doctor-profile-img'></div>
                 <div className='doctor-name-box'></div>
                 <div className='doctor-surname-box'></div>
                 <div className='doctor-email-box'></div>
