@@ -3153,3 +3153,37 @@ label{
   margin-left: 38%;
   border-radius: 5px;
 }
+
+.name-prop{
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.surname-prop{
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  position: absolute;
+  margin-left: 260px;
+  margin-top: -15px;
+  float: left;
+}
+
+.email-prop{
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  position: absolute;
+  margin-left: 400px;
+  margin-top: -15px;
+}
+
+.contact-prop{
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  position: absolute;
+  margin-left: 650px;
+  margin-top: -15px;
+}

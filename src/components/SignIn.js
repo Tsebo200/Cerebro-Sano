@@ -22,11 +22,10 @@ const SignIn = () => {
 
     const handleSubmit = (e) => {
       e.preventDefault();
-    console.log(inputs);
-
+    // console.log(inputs);
     axios.post('http://localhost:8888/mainProject/userLogin.php', inputs)
     .then(function(res){
-    console.log(res);
+    // console.log(res);
 
     if(res.data === true){
         sessionStorage.setItem('activeUser', inputs.email);
@@ -38,7 +37,6 @@ const SignIn = () => {
     });
 }
 
-    // locate("/register");
     return(
         <>
         <div className='main-container'>
@@ -49,7 +47,7 @@ const SignIn = () => {
                 <p className='login-text'>Log in</p>
                 <p className='welcome-login-text'>Welcome back! Please enter your details.</p>
                 <p className='email-text'>Email</p>
-                <form><input className='email-input' type={'email'} placeholder={"Enter Your Email"}onChange={emailVal}></input></form>
+                <form><input className='email-input' type={'email'} placeholder={"Enter Your Email"} onChange={emailVal}></input></form>
                 <p className='password-text'>Password</p>
                 <form><input className='password-input' type={'password'} placeholder={"Enter Your Password"} onChange={passwordVal}></input></form>
                 <form><input className='check-box' type={'checkbox'}></input><label>Remember for 30 days</label></form>

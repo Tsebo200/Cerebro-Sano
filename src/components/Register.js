@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import MiniModalLeftFirName from "./MiniModalLeftFirName";
 import MiniModalRightSurName from "./MiniModalRightSurName";
@@ -12,10 +12,6 @@ import MiniModalRightEmail from "./MiniModalRightEmail";
 import MiniModalRightPass from "./MiniModalRightPass";
 import MiniModalRightConPass from "./MiniModalRightConPass";
 import MiniModalRightPassEmpty from "./MiniModalRightPassEmpty";
-
-
-
-
 import Okay from '../Assets/okay.svg';
 import NotOkay from '../Assets/notOkay.svg';
 

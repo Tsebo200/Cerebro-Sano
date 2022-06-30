@@ -4,8 +4,10 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PostItem from './PostItem';
 import EditPatient from './EditPatient';
+import UserItem from './UserItem';
 
 const Patient = () => {
+    const navigate = useNavigate();
     // const [nameOne, setNameOne] = useState('');
     // const [inputs, setInputs] = useState({
     //     first: '',
@@ -30,69 +32,45 @@ const Patient = () => {
         
 // });
 
-      const [inputs, setInputs] = useState({
-        first: '',
-        surname: '',
-        email: '',
-        contact: '',
-    });
- 
-    const navigate = useNavigate();
-
     const [userId, setUserId] = useState({
-        activeUser: sessionStorage.getItem('activeUser'),
+       activeUser: sessionStorage.getItem('activeUser') 
     });
 
     const [posts, setPosts] = useState();
+    const [postSurname, sePostSurname] = useState();
     const [postMessage, setPostMessage] = useState({
-    message: '', 
-    user: sessionStorage.getItem('activeUser'),
+       message: '',
+       user:sessionStorage.getItem('activeUser') 
     });
-
-    const [renderPost, setRenderPost] = useState();
-
-    useEffect(()=>{
-    const userSession = sessionStorage.getItem('activeUser');
-    console.log(userSession);
-    if(userSession === '' || userSession === undefined){
-    navigate('/');
-    }
-    }, []);
-
-
-    useEffect(()=>{
-
-    axios.post('http://localhost:8888/mainProject/readUserPosts.php', userId)
-    .then((res)=>{
-        let data = res.data;
-        let renderPost = data.map((item) =>  <PostItem key={item.id} /*Change Rerender name to rerenderLevelOne*/rerender={setRenderPost} uniqueId={item.id} userpost={item.userpost} date={item.timestamp} message={item.message}  />);
-        console.log(data);
-        setPosts(renderPost);
-        setRenderPost(false);
-        
-    })
-    .catch(err=>{
-        console.log(err);
-    });
-
-    },[renderPost]);
-
-    const postVal = (e) => {
-    let messageVal = e.target.value;
-    setPostMessage({...postMessage, message: messageVal});
-    }
-
-    const addNewPost = (e) => {
-    e.preventDefault();
-    document.getElementById('textMes').value = "";
-    axios.post('http://localhost:8888/mainProject/addPost.php', postMessage)
-    .then((res)=>{
-        let data = res.data;
-        console.log(data); 
-        setRenderPost(true);
-    });
-    }
     
+    const [renderPost, setRenderPost] = useState();
+    const [renderPostSurname, setRenderPostSurname] = useState();
+
+    useEffect(() => {
+        axios.post('http://localhost:8888/mainProject/readUserPosts.php', userId)
+        .then((res) => {
+            console.log(res)
+            let data = res.data;
+            let renderPost = data.map((item) => <UserItem name={item.name}  surname={item.surname} email={item.email} contact={item.phone}/>)
+
+            setPosts(renderPost);
+            setRenderPost(false);
+
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+    },[]);
+
+
+
+
+
+
+
+
+
+    //Do Not Touch Below
           useEffect(() =>{
             const userSession = sessionStorage.getItem('activeUser');
             console.log(userSession);
@@ -101,10 +79,6 @@ const Patient = () => {
             }
           },[]);
 
-    // const setLogout = () => {
-    // sessionStorage.setItem('activeUser','');
-    // navigate('/');
-    // }
 
     return(
         <>
@@ -121,15 +95,18 @@ const Patient = () => {
                 <div className='patients-detail-container-one'>
                     <div className='patients-profile-one'></div>
                     <div className='patients-name-one'>
-                <p id="nameOne"></p>
+                        {posts}
+                {/* <p id="nameOne"></p> */}
                     {/* <p className='p-name'></p> */}
                     </div>
-                    <div className='patients-surname-one'></div>
+                    <div className='patients-surname-one'>
+                      
+                    </div>
                     <div className='patients-email-one'></div>
                     <div className='patients-phone-number-one'></div>
                     <div className='patients-remove-btn-one'></div>
                 </div>
-                <div className='patients-detail-container-two'>
+                {/* <div className='patients-detail-container-two'>
                     <div className='patients-profile-two'></div>
                     <div className='patients-name-two'></div>
                     <div className='patients-surname-two'></div>
@@ -192,7 +169,7 @@ const Patient = () => {
                     <div className='patients-email-nine'></div>
                     <div className='patients-phone-number-nine'></div>
                     <div className='patients-remove-btn-nine'></div>
-                </div>
+                </div> */}
             </div>
             </div>
 
