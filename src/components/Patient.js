@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PostItem from './PostItem';
+import EditPatient from './EditPatient';
 
 const Patient = () => {
     // const [nameOne, setNameOne] = useState('');
@@ -29,6 +30,12 @@ const Patient = () => {
         
 // });
 
+      const [inputs, setInputs] = useState({
+        first: '',
+        surname: '',
+        email: '',
+        contact: '',
+    });
  
     const navigate = useNavigate();
 
@@ -85,6 +92,14 @@ const Patient = () => {
         setRenderPost(true);
     });
     }
+    
+          useEffect(() =>{
+            const userSession = sessionStorage.getItem('activeUser');
+            console.log(userSession);
+            if(userSession === '' || userSession === null){
+              navigate('/');
+            }
+          },[]);
 
     // const setLogout = () => {
     // sessionStorage.setItem('activeUser','');
@@ -182,16 +197,7 @@ const Patient = () => {
             </div>
 
             <div className='edit-patients-detail-container'>
-                <div className='edit-patients-profile'></div>
-                <input className='edit-patients-name' onClick={postVal}></input>
-                <div className='edit-patients-surname'></div>
-                <div className='edit-patients-age'></div>
-                <div className='edit-patients-gender'></div>
-                <div className='edit-patients-email'></div>
-                <div className='edit-patients-phone-number'></div>
-                <div className='edit-patients-id'></div>
-                <div className='edit-patients-medical-aid-number'></div>
-                <div className='update-btn' onClick={addNewPost}></div>
+                {<EditPatient />}
             </div>
             
             {/* <a href="indipatient" onClick={Patient}>

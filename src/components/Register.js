@@ -36,6 +36,7 @@ const [inputs, setInputs] = useState({
     passwordCon: '',
     contact: '',
     rank: '',
+    image:'',
 });
 
 const [firstError, setFirstError] = useState();
@@ -232,7 +233,7 @@ const handleSubmit = (e) => {
                     <div className="sign-logo-reg"></div>
                     <p className='cerebro-sano-reg'>Cerebro Sano</p>
                     <p className="create-account-text">Create An Account</p>
-                    <p className="already-member-text">Already a member?</p><p className="signin-text-reg" /*onClick={locate}*/>Sign in</p>
+                    <p className="already-member-text">Already a member?</p><a href='/'><p className="signin-text-reg">Sign in</p></a>
                     <p className="first-name-text">First Name</p>
 
                     <form>

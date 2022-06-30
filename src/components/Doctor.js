@@ -1,8 +1,19 @@
 import react from 'react';
 import axios from 'axios';
+import { useNavigate } from "react-router-dom";
+import { useEffect } from 'react';
 
 const Doctor = () => {
-
+    
+    let navigate = useNavigate();
+    
+          useEffect(() =>{
+            const userSession = sessionStorage.getItem('activeUser');
+            console.log(userSession);
+            if(userSession === '' || userSession === null){
+              navigate('/');
+            }
+          },[]);
        
     return(
         <>

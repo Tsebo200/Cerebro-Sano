@@ -13,7 +13,7 @@ const Navigation = ()=>{
     return(
         <>
             <div className='vert-nav-bar'>
-                    <div className='patients-logo-box'></div>
+                    <a href="Dashboard"><div className='patients-logo-box'></div></a>
                     <p className='patients-cerebrosano'>CerebroSano</p>
                     <a href="Dashboard">
                     <div className='dashboard-nav-container' tabIndex="1">

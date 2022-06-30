@@ -24,7 +24,7 @@ const EditPost = (props) => {
   }
 
   const updatePost = () => {
-    axios.post('http://localhost:8888/api/updatePost.php', updatedPost)
+    axios.post('http://localhost:8888/mainProject/updatePost.php', updatedPost)
     .then((res)=>{
       let data = res.data;
       console.log(data);

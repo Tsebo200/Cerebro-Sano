@@ -5,8 +5,6 @@ import Navigation from './components/Navigation';
 import Dashboard from './components/Dashboard';
 import Patient from './components/Patient';
 import Doctor from './components/Doctor';
-import IndividualDoctor from './components/IndividualDoctor';
-import IndividualPatient from './components/IndividualPatient';
 import Register from './components/Register';
 import {Route, Routes} from 'react-router-dom';
 function App() {

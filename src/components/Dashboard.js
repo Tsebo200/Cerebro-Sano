@@ -1,16 +1,22 @@
 import React from "react";
 import moment from "moment";
 import { useNavigate } from "react-router-dom";
-
+import { useEffect, useState } from "react";
 
 const Dashboard = () => {
-    console.log(moment().format('DD MMM YYYY'))
+    const [userId, setUserId] = useState({
+        activeUser: sessionStorage.getItem('activeUser')
+      });
 
     let navigate = useNavigate();
-    const setLogout = () => {
-        sessionStorage.clear();
-        navigate('/')
-      }
+
+      useEffect(() =>{
+        const userSession = sessionStorage.getItem('activeUser');
+        console.log(userSession);
+        if(userSession === '' || userSession === null){
+          navigate('/');
+        }
+      },[]);
 
     return(
         <>
@@ -83,9 +89,6 @@ const Dashboard = () => {
                             <div className="profile-img"></div>
                         </div>
                     </div>
-
-
-
 
                     </div>  
                 </div>

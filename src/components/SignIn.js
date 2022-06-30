@@ -32,7 +32,7 @@ const SignIn = () => {
         sessionStorage.setItem('activeUser', inputs.email);
         locate("/Dashboard");
     } else {
-        console.log("Not Working");
+        console.log("Please Ensure your information is correct");
         //Log an Error or some type of message ("Email and Password not valid")
    }
     });
@@ -58,7 +58,7 @@ const SignIn = () => {
                     <p className='signIn-btn'>Sign in</p>
                 </div>
                 <div className='SignIn-Google-btn'><p className='Sign-Google-text'>Sign In with Google</p></div>
-                <p className='no-account-text'>Don't have an account?</p><p className='signin-text' /*onClick={locate}*/>Sign up</p>
+                <p className='no-account-text'>Don't have an account?</p><a href='register'><p className='signup-text'>Sign up</p></a>
             </div>
             <div className='right'></div>
         </div>
