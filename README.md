@@ -4,11 +4,11 @@
 <br />
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/Tsebo200/Cerebro-Sano)
-![GitHub watchers](https://img.shields.io/github/watchers/Tsebo200/Paculator)
-![GitHub language count](https://img.shields.io/github/languages/count/Tsebo200/Paculator)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Tsebo200/Paculator)
-![Github Language](https://img.shields.io/github/languages/top/Tsebo200/Paculator)
-![Github Downloads](https://img.shields.io/github/downloads/Tsebo200/Paculator/total)
+![GitHub watchers](https://img.shields.io/github/watchers/Tsebo200/Cerebro-Sano)
+![GitHub language count](https://img.shields.io/github/languages/count/Tsebo200/Cerebro-Sano)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Tsebo200/Cerebro-Sano)
+![Github Language](https://img.shields.io/github/languages/top/Tsebo200/Cerebro-Sano)
+![Github Downloads](https://img.shields.io/github/downloads/Tsebo200/Cerebro-Sano/total)
 <!-- ![Github node Version](https://img.shields.io/node/v/Paculator) -->
 
 
