@@ -156,13 +156,13 @@ The style I was going for was a fresh and modern look of websites that would be 
 
 ### Wireframes
 This is my first phase
-<img src="src/assets/WireOne.jpg" align="center"><br>
+<img src="src/Assets/WireOne.png" align="center"><br>
 
-<img src="src/assets/WireFour.jpg" align="center"><br>
+<img src="src/Assets/WireFour.png" align="center"><br>
 
-<img src="src/assets/WireThree.jpg" align="center"><br>
+<img src="src/Assets/WireThree.png" align="center"><br>
 
-<img src="src/assets/WireTwo.jpg" align="center">
+<img src="src/Assets/WireTwo.png" align="center">
 
 ### Custom UI
 This is the active state of my button
@@ -220,23 +220,23 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 
 ### Mockups
 
-![image12](https://github.com/Tsebo200/Pacualtor/blob/main/src/assets/MockOne.png)
+![image6](https://github.com/Tsebo200/Pacualtor/blob/main/src/Assets/MockOne.png)
 
 <br>
 
-![image13](https://github.com/Tsebo200/Pacualtor/blob/main/src/assets/MockTwo.png)
+![image7](https://github.com/Tsebo200/Pacualtor/blob/main/src/Assets/MockTwo.png)
 
 <br>
 
-![image13](https://github.com/Tsebo200/Pacualtor/blob/main/src/assets/MockThree.png)
+![image8](https://github.com/Tsebo200/Pacualtor/blob/main/src/Assets/MockThree.png)
 
 <br>
 
-![image14](https://github.com/Tsebo200/Pacualtor/blob/main/src/assets/MockFour.png)
+![image9](https://github.com/Tsebo200/Pacualtor/blob/main/src/Assets/MockFour.png)
 
 <br>
 
-![image15](https://github.com/Tsebo200/Pacualtor/blob/main/src/assets/MockFive.png)
+![image10](https://github.com/Tsebo200/Pacualtor/blob/main/src/Assets/MockFive.png)
 
 <br>
 
