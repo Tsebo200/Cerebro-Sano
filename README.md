@@ -26,7 +26,8 @@
   <h3 align="center">Cerebro Sano</h3>
 
   <p align="center">
-    A react project to manage breadwinners earnings while unit testing all the functions<br>
+    A react management system app project for a neurologist medical centre<br>
+    unit testing the php functions<br>
     
    <br />
    <br />
