@@ -121,36 +121,38 @@ Run the following in the command-line to install all the required dependencies:
 
 <!-- note how you can use your gitHub link. Just make a path to your assets folder -->
 ### Feature 
-In the register page, the user (Receptionist) needs to add all their information and if they did not there will be a modal (the ) that would indicate the input the user left out. This concept is called Authentication<br>
+In the register page, the user (Receptionist) needs to add all their information and if they did not there will be a modal (the navy labels) that would indicate the input the user left out. This concept is called Authentication.<br>
 
-![image1](https://github.com/Tsebo200/Cerebro-Sano/blob/main/src/Assets/RegisterModal.png) <br>
+![image1](https://github.com/Tsebo200/Cerebro-Sano/blob/main/src/Assets/RegisterModal.png) <br><br>
 
  The authentication is displayed in modals (the navy labels). The modals disappear while the user enters their information. <br>
 
-![image2](https://github.com/Tsebo200/Cerebro-Sano/blob/main/src/Assets/RegisterModalTwo.png)
+![image2](https://github.com/Tsebo200/Cerebro-Sano/blob/main/src/Assets/RegisterModalTwo.png)<br><br>
+
+ The logout feature button is on the navigation bar for the user, as this is a security feature that avoids the user being hacked, making our database vulnerable and the user. When the user clicks on the button they are redirected to the sign in page and their session is cleared from the website.<br>
+
+![image3](https://github.com/Tsebo200/Cerebro-Sano/blob/main/src/Assets/LogOutBtn.png)<br><br>
 
 ### Functionality 
-This functionality shows the percentage of the contributed amount in the household. The more you have contributed the higher the percent you own of the Net Income. <br>
-![image2](https://github.com/Tsebo200/Pacualtor/blob/main/src/assets/TotalNetIncome.png)
+A useNavigate hook was utilised so that when the user clicks on the sign in/create account button, they will be redirected to the dashboard and their email address will be added to the local storage. If the user clicked on the create account button their information will be added to the MYSQL database. The opposite will happen whereas if the user tried to redirect to the dashboard without registering or logging in then they will immediately be redirected to the sign in page, a useNavigate and useEffect was utilised to accomplish this function<br><br>
 
 
-Now since in this case Elon Musk owns 100% of the Net Income, he also owns the savings amount.
-![image3](https://github.com/Tsebo200/Pacualtor/blob/main/src/assets/AmountLeftOver.png)
+The functionality for the logOut button was a useNavigate and a sessionStorage.clear().
+<br><br>
 
-<br>
-
+In the patients page there will be a information about the user from the database, specifically, the same user that is signed into the the website.<br><br>
+![image4](https://github.com/Tsebo200/Cerebro-Sano/blob/main/src/Assets/ReceptionistInfo.png)<br><br>
 <!-- CONCEPT PROCESS -->
 <!-- Briefly explain your concept ideation process -->
 <!-- here you will add things like wireframing, data structure planning, anything that shows your process. You need to include images-->
 ## Concept Process
 
-The `Conceptual Process` is the set of actions, activities and research that was done when starting this project. As part of my conceptual process I have sketched wireframes in Figma, I looked at Pinterest for inspiration. I planned out my functionality by doing unit tests.
-<br>
+The `Conceptual Process` is the set of actions, activities and research that was done when starting this project. As part of my conceptual process I have sketched wireframes in Figma, I looked at Pinterest for inspiration. I created a database in MYSQL.
+<br><br>
 
 ### Ideation
-This was my main look and feel. As I wanted to utilise the skeuomorphic design.
-<img src="src/assets/SceumorphicUI.jpeg" align="center">
-<br>
+The style I was going for was a fresh and modern look of websites that would be found on dribble. When I was deciding the type of images I will be utilising, I went for jpegs as that is commonly found on websites, I feel I needed more experience with handling Jpegs as I am used to utilising Svgs and Pngs.
+![image5](https://github.com/Tsebo200/Cerebro-Sano/blob/main/src/Assets/leftImage.png)<br><br>
 
 ### Wireframes
 This is my first phase
@@ -164,56 +166,53 @@ This is my first phase
 
 ### Custom UI
 This is the active state of my button
-<img src="src/assets/Sufferbtn.png" align="center">
+<img src="src/Assets/DashboardBtnImage.png" align="center">
 <br>
 
 This is the hover state of my button
-<img src="src/assets/Sufferbtnhover.png" align="center">
+<img src="src/Assets/DashboardBtnHoverImage.png" align="center">
 <br>
 
-This is the skeuomorphic design on one of my component containers
-<img src="src/assets/AmountLeftUI.png" align="center">
 
 <!-- DEVELOPMENT PROCESS -->
 ## Development Process
 
 The `Development Process` is the technical implementations and functionality done in the frontend and backend of the application. 
 In my frontend I implemented a Google Font called Inter, a box shadow on different sections (content-containers), I added Hover States for my buttons.
-<br>In my backend I utilised React js with Vanilla JavaScript whilst testing my functions all in RTL(React Testing Library).
+<br>In my backend I utilised React.js with PHP whilst testing my PHP functions in PHPUnit Testing Library. I also created a database with MYSQL and used PHP to communicate to the database.
 
 ### Implementation Process
 <!-- stipulate all of the functionality you included in the project -->
 <!-- This is your time to shine, explain the technical nuances of your project, how did you achieve the final outcome!-->
 
-* Utilized React `RTL` dependency for Data visualization
+* Utilised React for front-end
+* Utilised PHP for back-end (communicates with MYSQL)
 * Implemented Routing with `React-Router v6`.
-* Wrote With Vanilla JavaScript
+* Implemented MYSQL to communicate with the front-end (React - register& login Pages) and back-end (PHP)
 
 #### Highlights
 <!-- stipulated the highlight you experienced with the project -->
 * I enjoyed this brief as there was room to explore and create something you really wanted in terms of UI/UX. 
-* I mostly enjoyed designing and developing the front-end.
+* I mostly enjoyed making UX decisions and implementing it into the project.
 
 #### Challenges
 <!-- stipulated the challenges you faced with the project and why you think you faced it or how you think you'll solve it (if not solved) -->
-* It took me a while to realise this, but I was supposed to add a return after a const variable in order for the information to be passed over to the next const. I spend around 2 - 3 hours debugging this Nan response.
+* It took me a while to understand how PHP communicates to React and MYSQL, thus leading my functions to being incomplete.
+* I also had many bugs in my project not knowing how to fix them.
 
 
 #### Above And Beyond
 
 What aspects of this final build contribute to the `Above And Beyond` Component of your brief?
 <!-- what did you learn outside of the classroom and implement into your project-->
-* Refactoring
-* I learnt how to add more than one const variable inside of an Onclick event, now I can even apply this to other events such as onChange and onHover etc.
+* New Library Learnt
+* I learnt how to create a react calendar while utilising moment.js to calculate the date and time.
 <br>
-
-* Front End Design Exploration
-* I learnt about a design trend named skeuomorphism and I was able to apply it to my front-end.
 
 ### Future Implementation
 <!-- stipulate functionality and improvements that can be implemented in the future. -->
 
-* I will learn more about RTL in order to write more complex Tests.
+* I will learn more about how React and PHP communicate to each other in order to make more complex functions.
 
 
 <!-- MOCKUPS -->
@@ -265,7 +264,7 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 ## Contact
 
 * **Tsebo Ramonyalioa** - [email@address](mailto:200200@virtualwidnow.co.za) - [@instagram_handle](https://www.instagram.com/inspiration200200/) 
-* **Project Link** - https://github.com/Tsebo200/Pacualtor
+* **Project Link** - https://github.com/Tsebo200/Cerebro-Sano
 
 <!-- ACKNOWLEDGEMENTS -->
 
