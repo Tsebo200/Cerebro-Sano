@@ -3,7 +3,7 @@
 <!-- Repository Information & Links-->
 <br />
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Tsebo200/Paculator)
+![GitHub repo size](https://img.shields.io/github/repo-size/Tsebo200/Cerebro-Sano)
 ![GitHub watchers](https://img.shields.io/github/watchers/Tsebo200/Paculator)
 ![GitHub language count](https://img.shields.io/github/languages/count/Tsebo200/Paculator)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Tsebo200/Paculator)
@@ -15,7 +15,7 @@
 <!-- HEADER SECTION -->
 <h5 align="center" style="padding:0;margin:0;">Tsebo Ramonyalioa</h5>
 <h5 align="center" style="padding:0;margin:0;">200200</h5>
-<h6 align="center">DV202 - Term 2 | 2022</h6>
+<h6 align="center">DV200 - Term 2 | 2022</h6>
 <h6 align="center">Unit Testing</h6>
 </br>
 <p align="center">
