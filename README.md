@@ -9,22 +9,21 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Tsebo200/Cerebro-Sano)
 ![Github Language](https://img.shields.io/github/languages/top/Tsebo200/Cerebro-Sano)
 ![Github Downloads](https://img.shields.io/github/downloads/Tsebo200/Cerebro-Sano/total)
-<!-- ![Github node Version](https://img.shields.io/node/v/Paculator) -->
+<!-- ![Github node Version](https://img.shields.io/node/v/Cerebro-Sano) -->
 
 
 <!-- HEADER SECTION -->
 <h5 align="center" style="padding:0;margin:0;">Tsebo Ramonyalioa</h5>
 <h5 align="center" style="padding:0;margin:0;">200200</h5>
 <h6 align="center">DV200 - Term 2 | 2022</h6>
-<h6 align="center">Unit Testing</h6>
 </br>
 <p align="center">
 
-  <a href="https://github.com/Tsebo200/Paculator">
-    <img src="src/assets/Logo.svg" align="center" alt="../src/Assets/Logo\ 2.png" width="140" height="140">
+  <a href="https://github.com/Tsebo200/Cerebro-Sano">
+    <img src="src/Assets/Logo.svg" align="center" alt="../src/Assets/Logo.png" width="140" height="140">
   </a>
   
-  <h3 align="center">Paculator</h3>
+  <h3 align="center">Cerebro Sano</h3>
 
   <p align="center">
     A react project to manage breadwinners earnings while unit testing all the functions<br>
@@ -33,9 +32,9 @@
    <br />
    <a href="https://drive.google.com/file/d/1BT_I1xlJTMef2u1XfV93AzrsM9vlIC_y/view?usp=sharing">View Demo</a>
     ·
-    <a href="https://github.com/Tsebo200/Paculator/issues">Report Bug</a>
+    <a href="https://github.com/Tsebo200/Cerebro-Sano/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Tsebo200/Paculator/issues">Request Feature</a>
+    <a href="https://github.com/Tsebo200/Cerebro-Sano/issues">Request Feature</a>
 </p>
 <!-- TABLE OF CONTENTS -->
 
@@ -75,7 +74,13 @@ My Project is a budget calculator, that calculates breadwinners earnings. The br
 ### Built With
 
 * [React](https://reactjs.org/)
-* [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+* [React Calendar](https://reactjs.org/)
+* [Moment](https://momentjs.com/)
+* [PHP](https://www.php.net/)
+* [PHPUnit Testing](https://phpunit.de/)
+* [MYSQL](https://www.mysql.com/)
+
+
 
 
 <!-- GETTING STARTED -->
@@ -94,12 +99,12 @@ Ensure that you have the latest version of [NPM](https://www.npmjs.com/) install
 Here are a couple of ways to clone this repo:
 
 1. GitHub Desktop </br>
-Enter `https://github.com/Tsebo200/Paculator.git` into the URL field and press the `Clone` button.
+Enter `https://github.com/Tsebo200/Cerebro-Sano.git` into the URL field and press the `Clone` button.
 
 2. Clone Repository </br>
 Run the following in the command-line to clone the project:
    ```sh
-   git clone https://github.com/Tsebo200/Paculator.git
+   git clone https://github.com/Tsebo200/Cerebro-Sano.git
    ```
     Open `Software` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
 
@@ -240,7 +245,7 @@ To see a run through of the application, click below:
 [View Demonstration](https://drive.google.com/file/d/1gY-Q5ua-iswJ4MdF9xmGJ-9F9rR-bsMO/view?usp=sharing)
 
 
-See the [open issues](https://github.com/Tsebo200/Paculator/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/Tsebo200/Cerebro-Sano/issues) for a list of proposed features (and known issues).
 
 <!-- AUTHORS -->
 ## Authors
