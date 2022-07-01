@@ -20,7 +20,7 @@
 <p align="center">
 
   <a href="https://github.com/Tsebo200/Cerebro-Sano">
-    <img src="src/Assets/Logo.svg" align="center" alt="../src/Assets/Logo.png" width="140" height="140">
+    <img src="src/Assets/Logo.png" align="center" alt="../src/Assets/Logo.png" width="140" height="140">
   </a>
   
   <h3 align="center">Cerebro Sano</h3>
