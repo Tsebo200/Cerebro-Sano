@@ -27,7 +27,7 @@
 
   <p align="center">
     A react management system app project for a neurologist medical centre<br>
-    unit testing the php functions<br>
+   while unit testing the php functions<br>
     
    <br />
    <br />
@@ -121,10 +121,13 @@ Run the following in the command-line to install all the required dependencies:
 
 <!-- note how you can use your gitHub link. Just make a path to your assets folder -->
 ### Feature 
-Once this button is clicked tax will be calculated and subtracted from your earnings on top of that your tax bracket will be displayed under your name in the income after tax container.<br>
+In the register page, the user (Receptionist) needs to add all their information and if they did not there will be a modal (the ) that would indicate the input the user left out. This concept is called Authentication<br>
 
-![image1](https://github.com/Tsebo200/Pacualtor/blob/main/src/assets/ButtonImg.png)
+![image1](https://github.com/Tsebo200/Cerebro-Sano/blob/main/src/Assets/RegisterModal.png) <br>
 
+ The authentication is displayed in modals (the navy labels). The modals disappear while the user enters their information. <br>
+
+![image2](https://github.com/Tsebo200/Cerebro-Sano/blob/main/src/Assets/RegisterModalTwo.png)
 
 ### Functionality 
 This functionality shows the percentage of the contributed amount in the household. The more you have contributed the higher the percent you own of the Net Income. <br>
