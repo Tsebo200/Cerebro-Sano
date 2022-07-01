@@ -8,29 +8,6 @@ import UserItem from './UserItem';
 
 const Patient = () => {
     const navigate = useNavigate();
-    // const [nameOne, setNameOne] = useState('');
-    // const [inputs, setInputs] = useState({
-    //     first: '',
-    //     surname: '',
-    //     email: '',
-    //     contact: '',
-    // });
-   
-//     axios.get('http://localhost:8888/mainProject/readPatients.php', inputs)
-//     .then(function(res){
-//         console.log(res)
-//         let names = res.data;
-//         let nameOne = names.slice(0,6);
-//         let nameTwo = names.slice(6,9);
-//         let nameThree = names.slice(9,17);
-//         let nameFour = names.slice(17,22);
-//         console.log(nameOne);
-//         console.log(nameTwo);
-//         console.log(nameThree);
-//         console.log(nameFour);
-//         document.getElementById('nameOne').textContent = nameOne;
-        
-// });
 
     const [userId, setUserId] = useState({
        activeUser: sessionStorage.getItem('activeUser') 
@@ -51,7 +28,7 @@ const Patient = () => {
         .then((res) => {
             console.log(res)
             let data = res.data;
-            let renderPost = data.map((item) => <UserItem name={item.name}  surname={item.surname} email={item.email} contact={item.phone}/>)
+            let renderPost = data.map((item) => <UserItem key={item.id} name={item.name}  surname={item.surname} email={item.email} contact={item.phone}/>)
 
             setPosts(renderPost);
             setRenderPost(false);
@@ -63,8 +40,22 @@ const Patient = () => {
     },[]);
 
 
+    const postVal = (e) => {
+        let messageVal = e.target.value;
+        setPostMessage ({...postMessage, message: messageVal})
+      }
 
 
+    const addNewPost = (e) => {
+        e.preventDefault();
+        // document.getElementById('textMes').value = "";
+        axios.post('http://localhost:8888/mainProject/addPost.php', postMessage)
+        .then((res) => {
+          let data = res.data;
+         console.log(data);
+         setRenderPost(true);
+      });
+      }
 
 
 
@@ -73,7 +64,7 @@ const Patient = () => {
     //Do Not Touch Below
           useEffect(() =>{
             const userSession = sessionStorage.getItem('activeUser');
-            console.log(userSession);
+            console.log("Receptionist Signed In with" + " " + userSession);
             if(userSession === '' || userSession === null){
               navigate('/');
             }
@@ -89,16 +80,12 @@ const Patient = () => {
                     <p className='surname-label'>Surname</p>
                     <p className='email-label'>Email</p>
                     <p className='phone-number-label'>Phone Number</p>
-                    <div className='add-patient-btn'></div>
+                    <div className='add-patient-btn' onClick={addNewPost}></div>
                 </div>
                 <div className='patients-container-overflow'>
                 <div className='patients-detail-container-one'>
                     <div className='patients-profile-one'></div>
-                    <div className='patients-name-one'>
-                        {posts}
-                {/* <p id="nameOne"></p> */}
-                    {/* <p className='p-name'></p> */}
-                    </div>
+                    <div className='patients-name-one'>{posts}</div>
                     <div className='patients-surname-one'>
                       
                     </div>

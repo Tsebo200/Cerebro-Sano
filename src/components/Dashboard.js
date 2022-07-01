@@ -13,7 +13,7 @@ const Dashboard = () => {
       useEffect(() =>{
         const userSession = sessionStorage.getItem('activeUser');
         console.log("Greetings" + " " +  userSession);
-        if(userSession === '' || userSession === null){
+        if(userSession === '' || userSession === undefined){
           navigate('/');
         }
       },[]);
