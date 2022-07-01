@@ -220,23 +220,23 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 
 ### Mockups
 
-![image6](https://github.com/Tsebo200/Pacualtor/blob/main/src/Assets/MockOne.png)
+![image6](https://github.com/Tsebo200/Cerebro-Sano/blob/main/src/Assets/MockOne.png)
 
 <br>
 
-![image7](https://github.com/Tsebo200/Pacualtor/blob/main/src/Assets/MockTwo.png)
+![image7](https://github.com/Tsebo200/Cerebro-Sano/blob/main/src/Assets/MockTwo.png)
 
 <br>
 
-![image8](https://github.com/Tsebo200/Pacualtor/blob/main/src/Assets/MockThree.png)
+![image8](https://github.com/Tsebo200/Cerebro-Sano/blob/main/src/Assets/MockThree.png)
 
 <br>
 
-![image9](https://github.com/Tsebo200/Pacualtor/blob/main/src/Assets/MockFour.png)
+![image9](https://github.com/Tsebo200/Cerebro-Sano/blob/main/src/Assets/MockFour.png)
 
 <br>
 
-![image10](https://github.com/Tsebo200/Pacualtor/blob/main/src/Assets/MockFive.png)
+![image10](https://github.com/Tsebo200/Cerebro-Sano/blob/main/src/Assets/MockFive.png)
 
 <br>
 
